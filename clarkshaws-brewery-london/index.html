@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#151515">
+<title>Clarkshaws · brewery and taproom · design concept</title>
+<meta name="description" content="A design concept by K Studio for Clarkshaws, London. Not the official website.">
+<style>
+  :root { --bg: #151515; --panel: #1f1f1f; --panel-2: #262626; --line: #353535; --teal: #12d4c5; --teal-2: #0fb3a6; --white: #ffffff; --text: #cfcfcf; --mute: #a4a4a4; --r: 10px; --head: "Oswald", "Avenir Next Condensed", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--text); background: var(--bg); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol { margin: 0; } h1, h2 { text-wrap: balance; } img, svg { display: block; max-width: 100%; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  .concept { background: #000; color: #c9c9c9; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: var(--teal); white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: rgba(21, 21, 21, .97); border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: block; padding: 10px 0; font-family: var(--head); font-weight: 700; font-size: 27px; letter-spacing: .03em; text-transform: uppercase; color: #fff; text-decoration: none; text-shadow: 0 0 14px rgba(255, 255, 255, .45); }
+  nav.links { display: none; gap: 26px; font-family: var(--head); font-size: 16px; letter-spacing: .06em; text-transform: uppercase; color: #fff; } nav.links a { text-decoration: none; padding: 10px 0; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border-radius: var(--r); font-weight: 800; font-size: 17px; text-decoration: none; text-align: center; }
+  .btn.teal { background: var(--teal); color: #05211e; } .btn.line { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .55); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .btn.stack { flex-direction: column; gap: 1px; line-height: 1.2; padding: 9px 22px; min-height: 60px; } .btn.stack small { font-weight: 600; font-size: 14px; opacity: .85; }
+  .hero .shot { width: 100%; height: 168px; object-fit: cover; object-position: 50% 62%; }
+  .hero .wrap { padding: 18px 0 32px; }
+  .kicker { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); }
+  .hero h1 { font-family: var(--head); font-size: clamp(42px, 11.6vw, 84px); line-height: 1.02; font-weight: 700; text-transform: uppercase; letter-spacing: .005em; color: #fff; margin: 8px 0 12px; }
+  .hero h1 span { color: var(--teal); }
+  .hero p.lead { font-size: 17px; line-height: 1.5; max-width: 40ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--teal); color: #05211e; }
+  .proof .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .proof .wrap > div { padding: 16px 12px 16px 0; } .proof .wrap > div:nth-child(even) { padding-left: 16px; border-left: 1px solid rgba(5, 33, 30, .25); } .proof .wrap > div:nth-child(n+3) { border-top: 1px solid rgba(5, 33, 30, .25); }
+  .proof b { display: block; font-family: var(--head); font-size: 23px; font-weight: 700; line-height: 1.1; text-transform: uppercase; } .proof span { display: block; font-size: 14px; line-height: 1.35; margin-top: 4px; color: #0a3a35; }
+  section { padding: 50px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); }
+  h2 { font-family: var(--head); font-size: clamp(34px, 9vw, 54px); line-height: 1.05; font-weight: 700; text-transform: uppercase; color: #fff; margin: 8px 0 12px; }
+  .sub { color: var(--text); max-width: 54ch; }
+  .price { display: inline-block; margin-top: 16px; background: var(--panel-2); border: 1px solid var(--teal); border-radius: 999px; padding: 9px 18px; font-weight: 800; color: #fff; font-size: 16px; }
+  .beers { display: grid; gap: 10px; margin-top: 18px; }
+  .beer { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--teal); border-radius: 12px; padding: 16px 16px 16px 18px; }
+  .beer h3 { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-family: var(--head); font-size: 23px; font-weight: 700; text-transform: uppercase; color: #fff; line-height: 1.15; }
+  .beer h3 i { font-style: normal; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 14px; font-weight: 800; color: var(--teal); white-space: nowrap; letter-spacing: .02em; }
+  .beer p { font-size: 16px; line-height: 1.5; margin-top: 6px; } .beer p.medal { font-size: 14px; font-weight: 700; color: #fff; margin-top: 8px; }
+  table.list { width: 100%; border-collapse: collapse; margin-top: 18px; font-size: 16px; }
+  table.list td { padding: 13px 0; border-top: 1px solid var(--line); vertical-align: top; line-height: 1.45; } table.list tr:first-child td { border-top: 0; }
+  table.list td b { display: block; color: #fff; font-size: 17px; } table.list td:last-child { text-align: right; font-weight: 800; color: var(--teal); white-space: nowrap; padding-left: 16px; font-size: 18px; }
+  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 22px 18px; }
+  .deliver { display: grid; gap: 0; margin-top: 18px; }
+  .deliver div { display: grid; grid-template-columns: 78px 1fr; gap: 14px; align-items: baseline; padding: 13px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.45; } .deliver div:first-child { border-top: 0; }
+  .deliver b { font-family: var(--head); font-size: 26px; line-height: 1; color: var(--teal); }
+  .note { font-size: 14px; line-height: 1.5; color: var(--mute); margin-top: 12px; }
+  .photo { width: 100%; height: auto; border-radius: 14px; margin-top: 22px; }
+  .tap { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .hours { display: grid; grid-template-columns: 1fr; gap: 0; margin-top: 18px; }
+  .hours div { padding: 13px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.45; } .hours b { display: block; color: #fff; font-size: 18px; }
+  .tap .cta .btn, .last .cta .btn { width: 100%; }
+  .ticks { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 0; }
+  .ticks li { position: relative; padding: 12px 0 12px 30px; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.45; } .ticks li:first-child { border-top: 0; }
+  .ticks li::before { content: ""; position: absolute; left: 4px; top: 17px; width: 13px; height: 7px; border-left: 3px solid var(--teal); border-bottom: 3px solid var(--teal); transform: rotate(-45deg); }
+  .last { background: var(--teal); color: #05211e; }
+  .last h2 { color: #05211e; } .last p { color: #0a3a35; max-width: 46ch; }
+  .btn.dark { background: #151515; color: #fff; } .btn.inkline { background: transparent; color: #05211e; border: 1.5px solid rgba(5, 33, 30, .6); }
+  .last address { font-style: normal; font-size: 15px; line-height: 1.55; margin-top: 22px; color: #0a3a35; } .last address b { color: #05211e; }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(21, 21, 21, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; max-width: 1280px; margin-inline: auto; } .hero .shot { height: 100%; min-height: 520px; order: 2; } .hero .wrap { width: auto; padding: 70px 50px 80px 40px; align-self: center; }
+    .hero p.lead { font-size: 21px; } .cta { grid-auto-flow: column; justify-content: start; }
+    .proof .wrap { grid-template-columns: repeat(4, 1fr); } .proof .wrap > div { border-top: 0 !important; border-left: 0 !important; padding: 24px 20px 24px 0 !important; }
+    section { padding: 84px 0; } .beers { grid-template-columns: 1fr 1fr; gap: 14px; } table.list, .box, .hours, .ticks { max-width: 760px; } .photo { max-width: 760px; }
+    .tap .cta .btn, .last .cta .btn { width: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Clarkshaws. This is not the official website.</span>
+  <a href="https://www.clarkshaws.co.uk/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top">Clarkshaws</a>
+  <nav class="links" aria-label="Sections"><a href="#beers">Our beers</a><a href="#shop">The shop</a><a href="#taproom">Tap room</a><a href="#contact">Contact us</a></nav>
+  <a class="btn teal small" href="mailto:info@clarkshaws.co.uk?subject=Beer%20order">Order beer</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="shot" src="img/bottles.jpg" alt="Clarkshaws bottles in a basket of fresh hops" width="900" height="674">
+  <div class="wrap">
+    <p class="kicker">Vegan and vegetarian friendly · London SW9</p>
+    <h1>Beer that's good for all. <span>No compromises.</span></h1>
+    <p class="lead">Created with a focus on quality, with a subtle blend of innovation, hard work and the finest ingredients.</p>
+    <div class="cta">
+      <a class="btn teal stack" href="mailto:info@clarkshaws.co.uk?subject=Beer%20order">Order beer<small>Drop us a line to arrange delivery</small></a>
+      <a class="btn line" href="#taproom">Tap room: Saturdays 2 to 8pm</a>
+    </div>
+  </div>
+</div>
+
+<div class="proof"><div class="wrap">
+  <div><b>Vegetarian Society</b><span>London's first microbrewery to produce all accredited products</span></div>
+  <div><b>SIBA Bronze</b><span>South East Independent Beer Awards 2016, Premium Lager &amp; Pilsner</span></div>
+  <div><b>Beautiful Brew</b><span>Winners, Urban Food Awards 2015</span></div>
+  <div><b>UK ingredients</b><span>Full farm to face traceability</span></div>
+</div></div>
+
+<section id="beers"><div class="wrap">
+  <p class="eyebrow">Our beers</p>
+  <h2>From our current stocklist.</h2>
+  <p class="sub">No artificial flavours or preservatives, natch. No fish (isinglass) products are used to fine our beers.</p>
+  <p class="price">£3.50 per bottle / £10 for 3</p>
+  <div class="beers">
+    <div class="beer"><h3>Hell Yeah! Lager <i>5.3% ABV</i></h3><p>Sweet honeysuckle and elderflower flavour with a tropical fruit aroma. Lagered at 4C for a crisp finish.</p><p class="medal">SIBA South East Independent Beer Awards 2016: Bronze Medal</p></div>
+    <div class="beer"><h3>Hellhound IPA <i>5.5% ABV</i></h3><p>Spicy with hints of citrus orange. Finishes with oak and caramel.</p></div>
+    <div class="beer"><h3>Gorgon's Alive <i>4.0% ABV</i></h3><p>Golden ale with honey and spice flavours, pleasant bitter finish.</p></div>
+    <div class="beer"><h3>Phoenix Rising <i>4.0% ABV</i></h3><p>Approachable with an inviting complex aroma, this beer is well balanced with a fusion of hops and mellow malt in the mouth.</p></div>
+    <div class="beer"><h3>Strange Brew Pale Ale <i>4.0% ABV</i></h3><p>Floral on the nose. Grassy and herby hop finish.</p></div>
+  </div>
+</div></section>
+
+<section id="shop" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">The shop</p>
+  <h2>Gift packs, mini kegs and more.</h2>
+  <table class="list">
+    <tr><td><b>3 bottle gift pack</b>A selection of 330ml bottles from our range in a hand-stamped presentation pack</td><td>£11</td></tr>
+    <tr><td><b>4 bottle gift pack</b></td><td>£14</td></tr>
+    <tr><td><b>6 bottle gift pack</b></td><td>£20</td></tr>
+    <tr><td><b>5L mini kegs</b>Freshly poured draft beer at home. Enough beer for a decent session (about 9pts)</td><td>£30</td></tr>
+    <tr><td><b>Be a brewer for a day experience</b>See the brew from the beginning, get to grips with the ingredients and have a chance to sample our range</td><td>£40</td></tr>
+    <tr><td><b>Hoodies</b>Coldharbour Hell Yeah! print on the back and Clarkshaws logo on chest</td><td>£30</td></tr>
+  </table>
+  <div class="box" style="margin-top:26px">
+    <p class="eyebrow">Delivery</p>
+    <div class="deliver">
+      <div><b>£5</b><span>In the local area: SE5, SW9, SE24, SE1, SE11, SE15, SE17, SE21, SE22, SE23, SW2, SW4, SW8</span></div>
+      <div><b>Free</b><span>For orders over £50 to these postcodes</span></div>
+      <div><b>£18</b><span>To the rest of the UK</span></div>
+    </div>
+    <p class="note">Minimum order value of £15.00 (including delivery) for all delivery sales including alcohol. We cannot guarantee delivery in time for Christmas when using a third party carrier to the rest of the UK.</p>
+    <a class="btn teal" style="width:100%; margin-top:16px" href="mailto:info@clarkshaws.co.uk?subject=Beer%20order">Drop us a line to order</a>
+  </div>
+</div></section>
+
+<section class="tap" id="taproom"><div class="wrap">
+  <p class="eyebrow">Tap room now open</p>
+  <h2>Drinks at the brewery, or to take home.</h2>
+  <p class="sub">We have some lovely seating outside which catches the sun. Looking forwards to seeing you!</p>
+  <div class="hours">
+    <div><b>Saturdays, 2.00 to 8.00pm</b>Tap room and onsite shop. No need to pre-order.</div>
+    <div><b>Arch 497 Ridgway Road, London SW9 7EX</b>Bottles, mini kegs and gift packs to take home.</div>
+  </div>
+  <img class="photo" src="img/loughborough-junction.jpg" alt="The Loughborough Junction railway bridge" width="900" height="506">
+  <div class="cta">
+    <a class="btn teal" href="https://www.google.com/maps/search/?api=1&query=Clarkshaws+497+Ridgway+Road+London+SW9+7EX" rel="nofollow noopener">Get directions</a>
+    <a class="btn line" href="tel:+447989402687">Call 07989 402 687</a>
+  </div>
+</div></section>
+
+<section id="own"><div class="wrap">
+  <p class="eyebrow">Your own beer</p>
+  <h2>A special touch for a big event.</h2>
+  <p class="sub">Have a big event like a wedding or birthday coming up? We can make a special recipe for you or provide any of our beer range. Get in touch about ordering a barrel or a run of bottles.</p>
+  <img class="photo" src="img/casks.jpg" alt="Clarkshaws casks stacked at the brewery" width="748" height="612">
+  <ul class="ticks">
+    <li>You can order half or whole barrels of beer</li>
+    <li>Hire our brewery taproom for private events including parties, tastings, beer and food pairings or tours</li>
+  </ul>
+  <div class="cta"><a class="btn line" href="mailto:info@clarkshaws.co.uk?subject=Your%20own%20beer">Get in touch</a></div>
+</div></section>
+
+<section id="pledge" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Our pledge to you</p>
+  <h2>Good quality, ecologically sustainable, ethically sound.</h2>
+  <img class="photo" src="img/hops.jpg" alt="Hops growing" width="780" height="584">
+  <ul class="ticks">
+    <li>Ingredients primarily sourced from the UK, supporting local producers and reducing the 'beer miles' of all our products</li>
+    <li>We now use only renewable energy in the production of our beer</li>
+    <li>Deliveries are made using our electric powered vehicle</li>
+    <li>We package all of our beers on site to avoid trucking goods up and down the country</li>
+    <li>All of our food waste goes to composting</li>
+  </ul>
+</div></section>
+
+<section class="last" id="contact"><div class="wrap">
+  <h2>Beer that's good for all.</h2>
+  <p>Drop us a line to arrange delivery, or come and find us at the tap room on Saturdays, 2.00 to 8.00pm.</p>
+  <div class="cta">
+    <a class="btn dark stack" href="mailto:info@clarkshaws.co.uk?subject=Beer%20order">Order beer<small>info@clarkshaws.co.uk</small></a>
+    <a class="btn inkline" href="tel:+447989402687">Call 07989 402 687</a>
+    <a class="btn inkline" href="https://www.google.com/maps/search/?api=1&query=Clarkshaws+497+Ridgway+Road+London+SW9+7EX" rel="nofollow noopener">Get directions</a>
+  </div>
+  <address><b>Clarkshaws</b><br>Arch 497 Ridgway Road, London SW9 7EX<br>Please drink responsibly.</address>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Clarkshaws website could look and work on a phone. The wording, prices and pictures come from clarkshaws.co.uk and its published stocklist.</p>
+  <p>It is not the official Clarkshaws website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="tel:+447989402687">Call</a>
+  <a class="btn teal" href="mailto:info@clarkshaws.co.uk?subject=Beer%20order">Order beer</a>
+</div>
+
+</body>
+</html>
