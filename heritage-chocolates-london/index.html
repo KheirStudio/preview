@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Heritage Chocolates · chocolate coins and medals · design concept</title>
+<meta name="description" content="A design concept by K Studio for Heritage Chocolates, London. Not the official website.">
+<style>
+  :root { --green: #3f7f2a; --green-2: #2c5a20; --green-3: #1f4217; --leaf: #6ca848; --mint: #ddedd3; --choc: #54300c; --choc-2: #6c4830; --gold: #f0c44c; --gold-2: #d9a92f; --ink: #2a1a0c; --mute: #6a5a4c; --paper: #fbf7ee; --line: #e6dcc8; --r: 12px; --shadow: 0 10px 26px rgba(60, 36, 8, .10); --serif: Georgia, "Times New Roman", serif; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol { margin: 0; } h1, h2 { text-wrap: balance; } img, svg { display: block; max-width: 100%; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  .concept { background: #24170b; color: #e6dccb; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: #ffe08a; white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 3px solid var(--leaf); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: block; padding: 6px 0; } .brand img { height: 48px; width: auto; }
+  nav.links { display: none; gap: 26px; font-family: var(--serif); font-size: 17px; color: var(--choc); } nav.links a { text-decoration: none; padding: 10px 0; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border-radius: var(--r); font-weight: 800; font-size: 17px; text-decoration: none; text-align: center; }
+  .btn.gold { background: linear-gradient(180deg, #f7d266, var(--gold) 55%, var(--gold-2)); color: #3a2208; box-shadow: inset 0 0 0 1px rgba(120, 84, 12, .35), 0 6px 16px rgba(0, 0, 0, .18); }
+  .btn.green { background: var(--green); color: #fff; } .btn.choc { background: var(--choc); color: #fff; }
+  .btn.line { background: #fff; color: var(--choc); border: 1.5px solid var(--choc-2); } .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .6); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .btn.stack { flex-direction: column; gap: 1px; line-height: 1.2; padding: 9px 22px; min-height: 60px; } .btn.stack small { font-weight: 600; font-size: 14px; opacity: .9; }
+  .hero { background: radial-gradient(120% 90% at 85% 0%, #5a9f3c 0%, var(--green) 42%, var(--green-2) 100%); color: #fff; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; opacity: .1; background-image: radial-gradient(circle at 20px 20px, #fff 2px, transparent 3px), radial-gradient(circle at 60px 60px, #fff 2px, transparent 3px); background-size: 80px 80px; }
+  .hero .wrap { position: relative; z-index: 1; padding: 24px 0 30px; }
+  .plate { width: 148px; height: 148px; border-radius: 50%; background: #fff; overflow: hidden; box-shadow: 0 0 0 4px var(--gold), 0 14px 30px rgba(0, 0, 0, .3); margin-bottom: 18px; }
+  .plate img { width: 100%; height: 100%; object-fit: cover; }
+  .kicker { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #ffe08a; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(34px, 9.4vw, 68px); line-height: 1.04; letter-spacing: -.015em; font-weight: 700; margin: 8px 0 12px; }
+  .hero h1 span { color: #ffe08a; }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: #eef6e8; max-width: 40ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--choc); color: #fff; }
+  .proof .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .proof .wrap > div { padding: 16px 12px 16px 0; } .proof .wrap > div:nth-child(even) { padding-left: 16px; border-left: 1px solid rgba(255, 255, 255, .22); } .proof .wrap > div:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, .22); }
+  .proof b { display: block; font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.1; color: #ffe08a; } .proof span { display: block; font-size: 14px; line-height: 1.35; color: #f1e6d6; margin-top: 4px; }
+  section { padding: 50px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--green); }
+  h2 { font-family: var(--serif); font-size: clamp(30px, 8vw, 48px); line-height: 1.08; letter-spacing: -.015em; font-weight: 700; margin: 8px 0 12px; color: var(--choc); }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .coins { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 22px; }
+  .coins figure { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 10px 8px 12px; text-align: center; box-shadow: var(--shadow); }
+  .coins img { width: 100%; height: auto; aspect-ratio: 1; }
+  .coins figcaption { font-family: var(--serif); font-size: 14px; line-height: 1.25; color: var(--choc); margin-top: 4px; }
+  .occasions { margin-top: 26px; }
+  .occasions p { font-weight: 800; font-size: 15px; color: var(--choc); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .chips a { display: inline-flex; align-items: center; min-height: 46px; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 0 16px; font-weight: 700; font-size: 15px; color: var(--green-2); text-decoration: none; }
+  .chips a.now { background: var(--green); border-color: var(--green); color: #fff; }
+  .sizes { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px 18px; margin-top: 26px; box-shadow: var(--shadow); }
+  .sizes h3 { font-family: var(--serif); font-size: 21px; color: var(--choc); } .sizes > p { color: var(--mute); font-size: 16px; margin-top: 4px; }
+  .scale { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; margin-top: 18px; }
+  .scale div { text-align: center; font-size: 14px; line-height: 1.3; color: var(--mute); } .scale b { display: block; font-size: 17px; color: var(--ink); margin-top: 8px; }
+  .scale i { display: block; margin: 0 auto; border-radius: 50%; background: radial-gradient(circle at 34% 30%, #fbe7a1, var(--gold) 46%, var(--gold-2) 78%, #b98a1c); box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .35), inset 0 0 0 5px rgba(150, 106, 14, .35), 0 6px 12px rgba(90, 60, 8, .22); }
+  .scale .s127 { width: 127px; height: 127px; } .scale .s80 { width: 80px; height: 80px; } .scale .s32 { width: 32px; height: 32px; }
+  .bespoke { background: var(--green-2); color: #fff; }
+  .bespoke h2 { color: #fff; } .bespoke .eyebrow { color: #ffe08a; } .bespoke .sub { color: #e2efd9; }
+  .facts { display: grid; gap: 0; margin-top: 22px; border-top: 1px solid rgba(255, 255, 255, .22); }
+  .facts div { display: grid; grid-template-columns: 112px 1fr; gap: 14px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, .22); }
+  .facts b { font-family: var(--serif); font-size: 26px; line-height: 1; color: #ffe08a; } .facts span { font-size: 16px; line-height: 1.4; color: #eef6e8; }
+  .svc { display: grid; gap: 12px; margin-top: 22px; }
+  .card { background: #fff; color: var(--ink); border-radius: 14px; padding: 20px; border-top: 4px solid var(--gold); }
+  .card h3 { font-family: var(--serif); font-size: 22px; color: var(--choc); margin-bottom: 6px; } .card p { color: var(--mute); font-size: 16px; line-height: 1.55; }
+  .opts { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 0; }
+  .opts li { padding: 10px 0 10px 26px; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.45; color: var(--ink); position: relative; }
+  .opts li::before { content: ""; position: absolute; left: 2px; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: var(--gold); box-shadow: inset 0 0 0 2px var(--gold-2); }
+  .bespoke .cta .btn { width: 100%; }
+  .about p { color: var(--mute); max-width: 60ch; } .about p + p { margin-top: 12px; } .about p.big { font-family: var(--serif); font-size: 20px; line-height: 1.45; color: var(--ink); }
+  .promise { display: grid; gap: 0; margin-top: 20px; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 4px 18px; box-shadow: var(--shadow); }
+  .promise div { padding: 14px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.5; color: var(--mute); } .promise div:first-child { border-top: 0; } .promise b { display: block; color: var(--choc); font-size: 17px; }
+  .last { background: var(--choc); color: #fff; }
+  .last h2 { color: #fff; } .last p { color: #f1e6d6; max-width: 46ch; } .last .cta .btn { width: 100%; }
+  .last .who { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; margin-top: 24px; background: #fff; color: var(--ink); border-radius: 14px; padding: 14px 16px; }
+  .last address { font-style: normal; font-size: 15px; line-height: 1.55; color: var(--mute); } .last address b { color: var(--ink); }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.7fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero .wrap { padding: 70px 0 80px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 50px; align-items: center; }
+    .hero .art { order: 2; justify-self: center; } .plate { width: 340px; height: 340px; margin: 0; box-shadow: 0 0 0 7px var(--gold), 0 24px 50px rgba(0, 0, 0, .3); }
+    .hero p.lead { font-size: 21px; max-width: 44ch; } .cta { grid-auto-flow: column; justify-content: start; }
+    .proof .wrap { grid-template-columns: repeat(4, 1fr); } .proof .wrap > div { border-top: 0 !important; border-left: 0 !important; padding: 24px 20px 24px 0 !important; }
+    section { padding: 84px 0; } .coins { gap: 20px; max-width: 760px; } .coins figure { padding: 18px 14px 20px; } .coins figcaption { font-size: 18px; }
+    .sizes { padding: 34px; max-width: 760px; } .scale { justify-content: flex-start; gap: 60px; }
+    .facts { grid-template-columns: repeat(3, 1fr); gap: 30px; border-top: 0; } .facts div { grid-template-columns: 1fr; gap: 6px; border-bottom: 0; border-top: 1px solid rgba(255, 255, 255, .3); padding-top: 18px; } .facts b { font-size: 36px; }
+    .svc { grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; } .bespoke .cta .btn, .last .cta .btn { width: auto; }
+    .promise { max-width: 760px; padding: 6px 26px; } .last .who { max-width: 520px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Heritage Chocolates. This is not the official website.</span>
+  <a href="https://www.heritagechocolates.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Heritage Chocolates"><img src="img/logo.jpg" alt="Heritage Chocolates" width="310" height="104"></a>
+  <nav class="links" aria-label="Sections"><a href="#shop">Shop</a><a href="#bespoke">Bespoke</a><a href="#about">About us</a><a href="#contact">Contact us</a></nav>
+  <a class="btn green small" href="https://www.heritagechocolates.com/shop.php" rel="nofollow">Coin shop</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero"><div class="wrap">
+  <div class="art"><div class="plate"><img src="img/coin-christmas-robin.jpg" alt="Christmas Robin chocolate coin in gold foil" width="350" height="350"></div></div>
+  <div>
+    <p class="kicker">Finest Belgian chocolate · UK based confectioner</p>
+    <h1>Chocolate coins and medals <span>for all occasions.</span></h1>
+    <p class="lead">The UK's leading quality chocolate coin and medallion manufacturers. Choose from our standard designs, or let us take your idea from concept to tasty coin.</p>
+    <div class="cta">
+      <a class="btn gold stack" href="https://www.heritagechocolates.com/shop_products.php?sid=33" rel="nofollow">Shop Christmas coins<small>Robin, Snowman, Santa Head and more</small></a>
+      <a class="btn ghost" href="#bespoke">Create a bespoke coin</a>
+    </div>
+  </div>
+</div></div>
+
+<div class="proof"><div class="wrap">
+  <div><b>Belgian chocolate</b><span>Minimum 30% cocoa solids</span></div>
+  <div><b>Three sizes</b><span>127mm, 80mm and 32mm, in a choice of foil colours</span></div>
+  <div><b>The Tower Mint</b><span>The coin minting skills of our sister company</span></div>
+  <div><b>Thousands</b><span>of satisfied customers</span></div>
+</div></div>
+
+<section id="shop"><div class="wrap">
+  <p class="eyebrow">Shop online</p>
+  <h2>Choose from our standard range of designs.</h2>
+  <p class="sub">Perfect as gifts, to mark a special occasion, or simply to enjoy.</p>
+  <div class="coins">
+    <figure><img src="img/coin-london-scenes.jpg" alt="London Scenes chocolate coin" width="350" height="350"><figcaption>London Scenes</figcaption></figure>
+    <figure><img src="img/coin-number-one.jpg" alt="Number One chocolate coin" width="350" height="350"><figcaption>Number One</figcaption></figure>
+    <figure><img src="img/coin-gold-medal.jpg" alt="You are the greatest gold medal chocolate coin" width="350" height="350"><figcaption>You are the greatest gold medal</figcaption></figure>
+  </div>
+  <div class="occasions">
+    <p>Search through our ranges of chocolate coins and medals:</p>
+    <div class="chips">
+      <a class="now" href="https://www.heritagechocolates.com/shop_products.php?sid=33" rel="nofollow">Christmas</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=37" rel="nofollow">Birthday</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=61" rel="nofollow">Wedding</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=36" rel="nofollow">Valentines</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=39" rel="nofollow">Mothers Day</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=40" rel="nofollow">Fathers Day</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=44" rel="nofollow">Sport</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=35" rel="nofollow">Currency Coins</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=45" rel="nofollow">Historic</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=41" rel="nofollow">Regional</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=42" rel="nofollow">WWI Propaganda</a>
+      <a href="https://www.heritagechocolates.com/shop_products.php?sid=43" rel="nofollow">Miscellaneous</a>
+    </div>
+  </div>
+  <div class="sizes">
+    <h3>Three sizes, and a choice of foil colours</h3>
+    <p>Larger coins can be hung on standard or personalised ribbons.</p>
+    <div class="scale">
+      <div><i class="s127"></i><b>127mm</b>125g or 90g</div>
+      <div><i class="s80"></i><b>80mm</b>24g</div>
+      <div><i class="s32"></i><b>32mm</b>in bags and nets</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="bespoke" id="bespoke"><div class="wrap">
+  <p class="eyebrow">Bespoke</p>
+  <h2>Your idea, from concept to tasty coin.</h2>
+  <p class="sub">Create something unique for that extra exclusivity. Personalised designs can be combined with one of our standard designs on the reverse of the medal or coin.</p>
+  <div class="facts">
+    <div><b>6 weeks</b><span>We can deliver a new design in as little as 6 weeks</span></div>
+    <div><b>£350</b><span>Origination costs start at £350 per side</span></div>
+    <div><b>One stop</b><span>A full design and packaging service, as well as the chocolate coins</span></div>
+  </div>
+  <div class="svc">
+    <div class="card">
+      <h3>Chocolate coins for business</h3>
+      <p>Ideal for innovative sales promotions and incentives. Many organisations have used our chocolate coins and medals to promote a new product or service, to mark an anniversary, or as give aways in exhibitions and functions.</p>
+      <ul class="opts">
+        <li>Packaged to order</li>
+        <li>Nets of coins labelled with personalised swing tags</li>
+        <li>A variety of foil colours</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Chocolate coins for personal</h3>
+      <p>Heritage chocolate medals and coins make the perfect fun gift. Our personal coins and medals can also be used to create an exclusive retail range.</p>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="btn gold" href="mailto:info@heritagechocolates.com?subject=Bespoke%20chocolate%20coins">Email us about your design</a>
+    <a class="btn ghost" href="tel:+442077337268">Call 0207 733 7268</a>
+  </div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+  <p class="eyebrow">About us</p>
+  <h2>Traditional coin minting skills, in Belgian chocolate.</h2>
+  <p class="big">We combine the traditional coin minting skills of our sister company The Tower Mint to produce chocolate coins and medals that are perfect as gifts, to mark a special occasion, to use in sales and marketing promotions, or simply to enjoy!</p>
+  <p>We only use quality Belgian chocolate, containing a minimum 30% cocoa solids. Heritage Chocolates combines modern production methods with the traditional skills of our Belgian chocolatiers, and we are the only company in the UK to offer such a one stop shop service.</p>
+  <div class="promise">
+    <div><b>Standard delivery</b>Royal Mail 1st Class post.</div>
+    <div><b>Next Day Delivery</b>Orders received before 1pm (GMT) will be guaranteed next day.</div>
+    <div><b>Our offer</b>We have thousands of satisfied customers and we want you to be one of them. If you are unhappy with your order call us and explain the problem, and if we cannot resolve the situation, return the products to us within 30 days from delivery date and we will refund the cost of the item.</div>
+  </div>
+</div></section>
+
+<section class="last" id="contact"><div class="wrap">
+  <h2>Chocolate coins and medals for all occasions.</h2>
+  <p>Visit our chocolate coin shop, or telephone us during office hours between 9 am and 5 pm.</p>
+  <div class="cta">
+    <a class="btn gold stack" href="https://www.heritagechocolates.com/shop_products.php?sid=33" rel="nofollow">Shop Christmas coins<small>Robin, Snowman, Santa Head and more</small></a>
+    <a class="btn ghost" href="tel:+442077337268">Call 0207 733 7268</a>
+    <a class="btn ghost" href="mailto:info@heritagechocolates.com?subject=Chocolate%20coins%20enquiry">info@heritagechocolates.com</a>
+  </div>
+  <div class="who">
+    <img src="img/logo.jpg" alt="Heritage Chocolates" width="310" height="104">
+    <address><b>Heritage Chocolates</b><br>1 - 21 Tower Heritage Centre, Carew Street, London SE5 9DF</address>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Heritage Chocolates website could look and work on a phone. The wording, prices, logo and coin pictures come from heritagechocolates.com.</p>
+  <p>It is not the official Heritage Chocolates website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="tel:+442077337268">Call us</a>
+  <a class="btn gold" href="https://www.heritagechocolates.com/shop_products.php?sid=33" rel="nofollow">Shop Christmas coins</a>
+</div>
+
+</body>
+</html>
