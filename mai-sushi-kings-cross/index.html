@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Mai Sushi · King's Cross · design concept</title>
+<meta name="description" content="A design concept by K Studio for Mai Sushi, King's Cross. Not the official website.">
+<style>
+  :root { --ink: #170b0b; --red: #8a1414; --paper: #faf6f1; --card: #fff; --mute: #6a5d58; --line: #eadfd6; --orange: #e9861a; --r: 6px; --shadow: 0 10px 28px rgba(21, 19, 18, .10); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul { margin: 0; } h1, h2 { text-wrap: balance; }
+  .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+  .wrap { width: min(100% - 44px, 1040px); margin-inline: auto; }
+  .concept { background: #0b0a09; color: #d8d2c6; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: #ff8a73; white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 3px solid var(--red); }
+  img { display: block; max-width: 100%; }
+  .brand img { height: 34px; width: auto; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: 22px; letter-spacing: .02em; padding: 10px 0; }
+  .brand i { width: 30px; height: 30px; border-radius: 50%; background: var(--red); }
+  nav.links { display: none; gap: 28px; font-size: 15px; font-weight: 600; color: var(--mute); } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 26px; border-radius: var(--r); font-weight: 700; font-size: 17px; text-decoration: none; letter-spacing: .01em; }
+  .btn.red { background: var(--red); color: #fff; } .btn.ink { background: var(--ink); color: #fff; } .btn.line { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); } .btn.light { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .6); }
+  .btn.small { min-height: 44px; padding: 0 18px; font-size: 15px; }
+  .hero { background: #fff; color: var(--ink); position: relative; overflow: hidden; }
+  .hero .plate { width: 200px; height: auto; margin: 0 -22px 2px auto; }
+  .hero .quote { margin-top: 18px; font-size: 16px; line-height: 1.45; font-style: italic; color: var(--mute); } .hero .quote span { font-style: normal; font-weight: 700; color: var(--red); white-space: nowrap; }
+  .fav .boat { width: 190px; height: auto; margin: 0 auto 10px; }
+  .hero::after { display: none; content: ""; position: absolute; right: -70px; bottom: -70px; width: 250px; height: 250px; border-radius: 50%; background: var(--red); }
+  .hero .wrap { position: relative; z-index: 1; padding: 14px 0 92px; }
+  .kicker { font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--red); }
+  .hero h1 { font-size: clamp(36px, 9.800vw, 80px); line-height: 1.04; letter-spacing: -.02em; font-weight: 500; margin: 8px 0 10px; max-width: 14ch; }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: var(--mute); max-width: 38ch; }
+  .cta { display: grid; gap: 10px; margin-top: 18px; }
+  .times { background: var(--card); border: 1px solid var(--line); margin-top: -64px; position: relative; z-index: 2; padding: 22px; box-shadow: var(--shadow); display: grid; gap: 16px; }
+  .times div { display: grid; gap: 2px; } .times small { font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--red); } .times b { font-size: 18px; font-weight: 600; }
+  section { padding: 56px 0; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--red); }
+  h2 { font-size: clamp(32px, 8vw, 50px); line-height: 1.08; letter-spacing: -.015em; font-weight: 500; margin: 12px 0 12px; }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .fav { display: grid; gap: 14px; margin-top: 26px; }
+  .fav div { background: var(--card); border: 1px solid var(--line); padding: 22px; }
+  .fav h3 { font-size: 24px; font-weight: 500; margin-bottom: 4px; } .fav p { color: var(--mute); font-size: 16px; } .fav b { display: block; margin-top: 10px; font-size: 14px; letter-spacing: .06em; color: var(--red); }
+  .menu { margin-top: 24px; background: var(--card); border: 1px solid var(--line); padding: 8px 20px; }
+  .menu h3 { font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--red); padding: 18px 0 6px; }
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 14px; padding: 13px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .row:last-child { border-bottom: 0; }
+  .row b { font-weight: 600; font-size: 17px; } .row span { font-weight: 700; font-variant-numeric: tabular-nums; } .row small { grid-column: 1 / -1; color: var(--mute); font-size: 16px; line-height: 1.45; }
+  .note { margin-top: 12px; font-size: 15px; color: var(--mute); }
+  .said { background: var(--ink); color: #fff; padding: 34px 24px; margin-top: 4px; }
+  .said blockquote { margin: 0; font-size: 24px; line-height: 1.35; font-weight: 500; } .said cite { display: block; margin-top: 16px; font-style: normal; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: #ff8a73; }
+  .said blockquote + cite + blockquote { margin-top: 30px; }
+  .find { background: var(--card); border: 1px solid var(--line); padding: 28px 22px; box-shadow: var(--shadow); }
+  .find .cta .btn { width: 100%; } address { font-style: normal; color: var(--mute); margin-top: 22px; line-height: 1.7; } address b { color: var(--ink); }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(246, 241, 231, .96); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero .wrap { padding: 104px 0 170px; } .hero::after { width: 420px; height: 420px; right: 6%; bottom: -150px; } .hero p.lead { font-size: 22px; max-width: 40ch; } .cta { grid-auto-flow: column; justify-content: start; }
+    .times { grid-template-columns: repeat(3, 1fr); padding: 30px 36px; } section { padding: 92px 0; } .fav { grid-template-columns: 1fr 1fr; gap: 18px; }
+    .menus { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; } .said { padding: 60px 56px; } .said blockquote { font-size: 30px; max-width: 24ch; }
+    .find { padding: 48px 56px; } .find .cta .btn { width: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Mai Sushi. This is not the official website.</span>
+  <a href="http://www.maisushi.co.uk/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Mai Sushi"><img src="img/logo.png" alt="Mai Sushi" width="283" height="55"></a>
+  <nav class="links" aria-label="Sections"><a href="#favourites">Favourites</a><a href="#menu">Menu</a><a href="#find">Find us</a></nav>
+  <a class="btn red small" href="tel:+442073837444">Call</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero"><div class="wrap">
+  <img class="plate" src="img/plate.jpg" alt="A plate of sashimi at Mai Sushi" width="377" height="393">
+  <p class="kicker">Japanese sushi bar and restaurant</p>
+  <h1 class="serif">Fresh sushi between King's Cross and Euston.</h1>
+  <p class="lead">The finest ingredients imported from Japan, for the best quality and an authentic flavour. Eat in, take away, or have it delivered within a mile.</p>
+  <div class="cta">
+    <a class="btn red" href="tel:+442073837444">Call 020 7383 7444</a>
+    <a class="btn line" href="#menu">See the menu and prices</a>
+  </div>
+  <p class="quote">“All I can say is that my expectations were exceeded in every way.” <span>A customer</span></p>
+</div></div>
+
+<div class="wrap">
+  <div class="times">
+    <div><small>Dinner</small><b>5pm to 10pm, Monday to Saturday</b></div>
+    <div><small>Lunch</small><b>Monday to Friday</b></div>
+    <div><small>Takeaway and delivery</small><b>Home delivery within a one mile radius</b></div>
+  </div>
+</div>
+
+<section id="favourites"><div class="wrap">
+  <p class="eyebrow">Our favourites</p>
+  <h2 class="serif">The best, healthiest and freshest.</h2>
+  <div class="fav">
+    <div><img class="boat" src="img/boat.jpg" alt="A sushi boat at Mai Sushi" width="377" height="393"><h3 class="serif">Nigiri</h3><p>A small clump of rice with a slice of fish on top.</p><b>15 varieties: salmon, tuna, sea bass, sea bream, turbot, mackerel, yellow tail, eel, prawn and more</b></div>
+    <div><h3 class="serif">Hand rolls</h3><p>Fresh fish with rice in a nori seaweed wrapping.</p><b>18 varieties: California, Alaska, tempura, avocado, tuna, salmon, prawn tempura and more</b></div>
+  </div>
+</div></section>
+
+<section id="menu" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">From the menu</p>
+  <h2 class="serif">A taste of what we serve.</h2>
+  <div class="menus">
+    <div class="menu">
+      <h3>Starters</h3>
+      <div class="row"><b>Soft Shell Crab</b><span>£9.20</span><small>Deep fried crab served with ponzu sauce</small></div>
+      <div class="row"><b>Kaitaifi Prawn</b><span>£9.50</span><small>Four king prawns wrapped in special noodle</small></div>
+      <div class="row"><b>Gyoza</b><span>£7.50</span><small>Four pan fried pork dumplings</small></div>
+      <div class="row"><b>Yaki Tori</b><span>£7.20</span><small>Two skewers of chicken and onion</small></div>
+      <div class="row"><b>Nasu Dengaku</b><span>£8.20</span><small>Grilled half aubergine with sweet miso</small></div>
+      <div class="row"><b>Edamame</b><span>£5.00</span><small>Japanese soy beans served with sea salt</small></div>
+      <div class="row"><b>Miso Soup</b><span>£4.00</span><small>With tofu, seaweed and spring onions</small></div>
+    </div>
+    <div class="menu">
+      <h3>Sushi, salads and mains</h3>
+      <div class="row"><b>Salmon Sun Flash</b><span>£16.50</span><small>Eight slices, served with special sauce</small></div>
+      <div class="row"><b>Eel Avocado roll</b><span>£9.80</span><small>Grilled eel and avocado</small></div>
+      <div class="row"><b>Salmon Avocado roll</b><span>£7.50</span><small>Salmon and avocado</small></div>
+      <div class="row"><b>Tuna Sashimi Salad</b><span>£16.00</span></div>
+      <div class="row"><b>Seabass Teriyaki</b><span>£15.50</span><small>Grilled seabass in teriyaki sauce, served with salad</small></div>
+      <div class="row"><b>Prawn Tempura Udon or Soba</b><span>£15.50</span><small>Prawn and vegetable tempura on noodle soup</small></div>
+    </div>
+  </div>
+  <p class="note">A selection only. Prices as listed on maisushi.co.uk. Sushi boat sets of 43 to 63 pieces are also available.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="said serif">
+    <blockquote>“The sushi was fresh and delicious which I was very happy with. The restaurant setting was relaxing and a friendly service was the bonus.”</blockquote>
+    <cite>A customer</cite>
+  </div>
+</div></section>
+
+<section id="find" style="padding-top:0"><div class="wrap">
+  <div class="find">
+    <p class="eyebrow">Find us</p>
+    <h2 class="serif">36 to 38 Chalton Street.</h2>
+    <p class="sub">A few minutes' walk from both Euston and King's Cross stations.</p>
+    <div class="cta">
+      <a class="btn ink" href="tel:+442073837444">Call 020 7383 7444</a>
+      <a class="btn line" href="mailto:info@maisushi.co.uk?subject=Enquiry%20from%20the%20website">Email us</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=36+Chalton+Street+London+NW1+1JB" rel="nofollow noopener">Get directions</a>
+    </div>
+    <address><b>Mai Sushi</b><br>36 to 38 Chalton Street, Euston, London NW1 1JB<br>info@maisushi.co.uk</address>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Mai Sushi website could look and work on a phone. The wording, menu, prices, logo and photographs come from maisushi.co.uk.</p>
+  <p>It is not the official Mai Sushi website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="#menu">Menu</a>
+  <a class="btn red" href="tel:+442073837444">Call now</a>
+</div>
+
+</body>
+</html>

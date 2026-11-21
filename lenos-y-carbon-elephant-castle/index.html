@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Leños &amp; Carbón · Colombian cuisine · design concept</title>
+<meta name="description" content="A design concept by K Studio for Leños &amp; Carbón, Elephant and Castle. Not the official website.">
+<style>
+  :root { --red: #d51043; --red-2: #b00c36; --sun: #f6d02f; --navy: #2b2f86; --ink: #141414; --mute: #5f5a5a; --paper: #ffffff; --soft: #faf6f1; --line: #ece4dc; --r: 14px; --shadow: 0 10px 28px rgba(20, 20, 20, .10); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul { margin: 0; } h1, h2 { text-wrap: balance; } img { display: block; max-width: 100%; }
+  .hand { font-family: "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+  .wrap { width: min(100% - 40px, 1040px); margin-inline: auto; }
+  .concept { background: #141414; color: #e2dcdc; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: var(--sun); white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 3px solid var(--red); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; padding: 6px 0; font-size: 17px; line-height: 1; letter-spacing: .06em; }
+  .brand img { height: 50px; width: auto; }
+  nav.links { display: none; gap: 26px; font-size: 16px; color: var(--red); } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border-radius: var(--r); font-weight: 800; font-size: 17px; text-decoration: none; text-align: center; }
+  .btn.red { background: var(--red); color: #fff; } .btn.ink { background: var(--ink); color: #fff; } .btn.line { background: #fff; color: var(--ink); border: 1.5px solid var(--ink); } .btn.white { background: #fff; color: var(--red-2); } .btn.pale { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .65); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .btn.stack { flex-direction: column; gap: 1px; line-height: 1.2; padding: 9px 22px; min-height: 60px; } .btn.stack small { font-weight: 600; font-size: 14px; opacity: .92; }
+  .hero .shot { width: 100%; height: 188px; object-fit: cover; object-position: 50% 62%; }
+  .hero .wrap { padding: 22px 0 30px; }
+  .kicker { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+  .hero h1 { font-size: clamp(36px, 10vw, 76px); line-height: 1.02; letter-spacing: .02em; margin: 8px 0 12px; }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: var(--mute); max-width: 38ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--red); color: #fff; }
+  .proof .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 16px 0; }
+  .proof b { display: block; font-size: 22px; line-height: 1.05; letter-spacing: .04em; } .proof span { display: block; font-size: 13px; line-height: 1.3; color: #ffe1e8; margin-top: 4px; }
+  section { padding: 50px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+  h2 { font-size: clamp(34px, 9vw, 56px); line-height: 1.04; letter-spacing: .03em; margin: 8px 0 12px; }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .daily { background: var(--sun); border-radius: 22px; padding: 26px 22px; position: relative; overflow: hidden; }
+  .daily .price { font-size: 76px; line-height: .9; letter-spacing: 0; color: var(--red); margin: 6px 0 10px; }
+  .daily p { max-width: 36ch; color: #2d2607; font-weight: 600; } .daily small { display: block; margin-top: 10px; font-size: 13px; color: #5a4d10; } .daily .btn { margin-top: 18px; width: 100%; }
+  .menu { margin-top: 22px; border-top: 3px solid var(--navy); }
+  .menu h3 { font-size: 26px; color: var(--red); padding: 22px 0 4px; letter-spacing: .06em; }
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 2px 14px; padding: 13px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .row b { font-size: 18px; letter-spacing: .08em; } .row span { font-weight: 800; font-variant-numeric: tabular-nums; color: var(--ink); } .row small { grid-column: 1 / -1; color: var(--mute); font-size: 16px; line-height: 1.45; }
+  .row.star b { background: linear-gradient(transparent 55%, var(--sun) 55%); }
+  .note { margin-top: 14px; font-size: 14px; color: var(--mute); line-height: 1.5; }
+  .party { background: var(--ink); color: #fff; border-radius: 22px; padding: 30px 22px; }
+  .party h2 { color: #fff; } .party .eyebrow { color: var(--sun); } .party p { color: #d9d3d3; max-width: 48ch; } .party .btn { margin-top: 20px; width: 100%; }
+  .two { display: grid; gap: 14px; margin-top: 22px; }
+  .card { background: var(--soft); border: 1px solid var(--line); border-radius: 18px; padding: 22px 20px; }
+  .card h3 { font-size: 24px; letter-spacing: .06em; margin-bottom: 6px; } .card p { color: var(--mute); font-size: 16px; }
+  .hours { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 16px; } .hours td { padding: 9px 0; border-top: 1px solid var(--line); vertical-align: top; } .hours td:last-child { text-align: right; font-weight: 700; white-space: nowrap; }
+  .last { background: var(--red); color: #fff; }
+  .last h2 { color: #fff; } .last p { color: #ffe1e8; max-width: 44ch; } .last .cta .btn { width: 100%; } .last address { font-style: normal; margin-top: 20px; color: #ffe1e8; line-height: 1.7; font-size: 16px; } .last address b { color: #fff; }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; max-width: 1140px; margin-inline: auto; } .hero .shot { height: 430px; order: 2; } .hero .wrap { width: auto; padding: 60px 40px; }
+    .cta { grid-auto-flow: column; justify-content: start; } .proof b { font-size: 30px; } .proof span { font-size: 15px; }
+    section { padding: 84px 0; } .daily { padding: 48px; } .daily .btn, .party .btn { width: auto; } .menus { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; align-items: start; }
+    .party { padding: 56px; } .two { grid-template-columns: 1fr 1fr; gap: 18px; } .last .cta .btn { width: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Leños &amp; Carbón. This is not the official website.</span>
+  <a href="https://www.lenosycarbonuk.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand hand" href="#top" aria-label="Leños and Carbón"><img src="img/logo.png" alt="Leños &amp; Carbón, Colombian Cuisine" width="420" height="318"><span>Leños &amp; Carbón</span></a>
+  <nav class="links hand" aria-label="Sections"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#find">Opening times</a></nav>
+  <a class="btn red small" href="tel:+442074078865">Book a table</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="shot" src="img/plates.jpg" alt="Plates of Colombian food at Leños &amp; Carbón" width="773" height="504">
+  <div class="wrap">
+    <p class="kicker">Colombian cuisine · Elephant &amp; Castle</p>
+    <h1 class="hand">Welcome to the Colombian culinary journey.</h1>
+    <p class="lead">Since 2009, the go-to spot in London for a taste of Latin America, especially Colombian delights.</p>
+    <div class="cta">
+      <a class="btn red stack" href="tel:+442074078865">Book a table<small>Call 020 7407 8865</small></a>
+      <a class="btn line" href="#menu">See the menu and prices</a>
+    </div>
+  </div>
+</div>
+
+<div class="proof"><div class="wrap">
+  <div><b class="hand">Since 2009</b><span>Serving Colombian food in London</span></div>
+  <div><b class="hand">£15</b><span>Daily menu: soup, a main dish and a drink</span></div>
+  <div><b class="hand">Till midnight</b><span>Fridays and Saturdays</span></div>
+</div></div>
+
+<section><div class="wrap">
+  <div class="daily">
+    <p class="eyebrow" style="color:#7a1027">Daily menu</p>
+    <p class="price hand">£15</p>
+    <p>For a taste of Colombia! Soup, a main dish, and a drink that'll have you shouting, “¡Qué rico!” Join the feast!</p>
+    <small>Terms and conditions apply.</small>
+    <a class="btn ink" href="tel:+442074078865">Book a table</a>
+  </div>
+</div></section>
+
+<section id="menu" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">From the menu</p>
+  <h2 class="hand">Dishes that make our hearts sing with pride.</h2>
+  <div class="menus">
+    <div class="menu">
+      <h3 class="hand">Starters and tapas</h3>
+      <div class="row"><b class="hand">Empanada</b><span>£2.10</span><small>Latin American corn patties with seasoned meat (price per unit)</small></div>
+      <div class="row star"><b class="hand">Patacones x4</b><span>£6.70</span><small>Deep-fried green plantain</small></div>
+      <div class="row"><b class="hand">Yuca frita x5</b><span>£8.90</span><small>Deep-fried cassava (similar to yam and sweet potato)</small></div>
+      <div class="row"><b class="hand">Papa criolla</b><span>£8.20</span><small>Small fried yellow potatoes</small></div>
+      <div class="row"><b class="hand">Plátano maduro con queso</b><span>£8.90</span><small>Fried ripe plantain served with melted cheese</small></div>
+      <div class="row"><b class="hand">Deditos de queso x5</b><span>£10.50</span><small>Latin American cheese dough fingers, served with pineapple sauce</small></div>
+      <div class="row star"><b class="hand">Arepa de maíz o patacones</b><span>from £9.30</span><small>Pick your filling: cheese £9.30, shredded beef £11.30, Colombian chorizo £11.30, pork belly £11.80, fillet steak £12.50</small></div>
+      <div class="row"><b class="hand">Gambas al ajillo</b><span>£14.90</span><small>King prawns with garlic and wine</small></div>
+      <div class="row"><b class="hand">Ceviche de camarón</b><span>£16.00</span><small>Prawns marinated in lemon juice, with onions, tomato sauce and coriander, served with crackers</small></div>
+    </div>
+    <div class="menu">
+      <h3 class="hand">Main courses</h3>
+      <div class="row star"><b class="hand">Bandeja paisa</b><span>£22.50</span><small>Red kidney beans, rice, minced beef, egg, fried ripe plantain, pork belly, chorizo, avocado and rustic cornbread</small></div>
+      <div class="row"><b class="hand">Bandeja paisa vegetariana</b><span>£20.80</span><small>Red kidney beans, rice, fried egg, fried ripe plantain, yellow potato, avocado, cassava, rustic cornbread and salad</small></div>
+      <div class="row"><b class="hand">Frijoles con chicharrón</b><span>£19.50</span><small>Red kidney beans, served with rice, fried ripe plantain, salad, avocado, rustic cornbread and pork belly</small></div>
+      <div class="row"><b class="hand">Sobrebarriga en salsa</b><span>£20.90</span><small>Flank steak cooked in tomato and onion sauce, served with rice, salad and chips</small></div>
+      <div class="row star"><b class="hand">Filete de carne al carbón</b><span>£24.50</span><small>Charcoal grilled fillet steak served with rice, salad and chips</small></div>
+      <div class="row"><b class="hand">Pollo al carbón con salsa de champiñones</b><span>£23.90</span><small>Tender chicken breast with mushroom sauce, served with rice, salad and chips</small></div>
+      <div class="row"><b class="hand">Churrasco al carbón</b><span>£33.50</span><small>Charcoal-grilled bone steak served with rice, salad and chips</small></div>
+      <div class="row"><b class="hand">Parrillada mixta al carbón</b><span>£44.20</span><small>Mixed charcoal-grilled pieces of chicken, pork, beef, ribs, pork belly and Colombian chorizo, served with rice, salad and chips</small></div>
+      <div class="row star"><b class="hand">Sancocho (weekends only)</b><span>£20.80</span><small>Colombian chicken or beef soup with cassava, plantain, potatoes and a hint of coriander</small></div>
+      <div class="row"><b class="hand">Kids: chicken nuggets and chips</b><span>£11.50</span></div>
+    </div>
+  </div>
+  <p class="note">A selection only, with prices as shown on the Leños &amp; Carbón menu. All items are subject to availability. Dishes may contain nut or nut derivatives. All of our food is freshly prepared and cooked to order: if you have any allergens, please tell a member of our waiting staff.</p>
+</div></section>
+
+<section id="story" style="padding-top:0"><div class="wrap">
+  <div class="party">
+    <p class="eyebrow">Our story</p>
+    <h2 class="hand">Where every meal is a celebration.</h2>
+    <p>It's more than a place to eat; it's where friends and families gather to celebrate life's big moments, from birthdays to weddings. We're a melting pot of cultures, serving up dishes that make our hearts sing with pride. Come join the party!</p>
+    <a class="btn red" href="tel:+442074078865">Book a table: 020 7407 8865</a>
+  </div>
+</div></section>
+
+<section id="find" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Come on over</p>
+  <h2 class="hand">113C Elephant Road.</h2>
+  <div class="two">
+    <div class="card">
+      <h3 class="hand">Opening times</h3>
+      <table class="hours">
+        <tr><td>Monday</td><td>Closed</td></tr>
+        <tr><td>Tuesday to Thursday, and Sunday</td><td>12:00 to 23:00</td></tr>
+        <tr><td>Friday and Saturday</td><td>12:00 to 00:00</td></tr>
+        <tr><td>Kitchen closes</td><td>21:45 (23:00 Fri, Sat)</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3 class="hand">Delivery and pick-up</h3>
+      <p>Bring the fiesta to your table using your favourite delivery service. You can also give us a ring and swing by to pick up your feast, directly from our kitchen to your hands.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="last"><div class="wrap">
+  <h2 class="hand">Come join the party. Book your table.</h2>
+  <p>Whether you're clinging to your roots or eager to try new flavours, come on over.</p>
+  <div class="cta">
+    <a class="btn white" href="tel:+442074078865">Call 020 7407 8865</a>
+    <a class="btn pale" href="tel:+442077013344">Or 020 7701 3344</a>
+    <a class="btn pale" href="mailto:info@lenosycarbonuk.com?subject=Booking%20enquiry">Email us</a>
+    <a class="btn pale" href="https://www.google.com/maps/search/?api=1&query=113C+Elephant+Road+London+SE17+1LB" rel="nofollow noopener">Get directions</a>
+  </div>
+  <address><b>Leños &amp; Carbón</b><br>113C Elephant Road, Elephant &amp; Castle, London SE17 1LB<br>info@lenosycarbonuk.com</address>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Leños &amp; Carbón website could look and work on a phone. The wording, menu, prices, logo and photograph come from lenosycarbonuk.com.</p>
+  <p>It is not the official Leños &amp; Carbón website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="#menu">Menu</a>
+  <a class="btn red" href="tel:+442074078865">Book a table</a>
+</div>
+
+</body>
+</html>

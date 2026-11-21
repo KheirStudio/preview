@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Sunlight Caribbean · Hackney · design concept</title>
+<meta name="description" content="A design concept by K Studio for Sunlight Caribbean, Hackney. Not the official website.">
+<style>
+  :root { --green: #0f3d2e; --leaf: #1c6b4c; --sun: #ffc531; --coral: #ff5a3c; --cream: #fff8ea; --ink: #14231c; --mute: #5c6a62; --line: #eadfc6; --r: 22px; --shadow: 0 12px 30px rgba(15, 61, 46, .12); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--cream); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul { margin: 0; } h1, h2 { text-wrap: balance; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  .concept { background: #0c1310; color: #d8e0db; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: var(--sun); white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 1px solid var(--line); }
+  img { display: block; max-width: 100%; }
+  .brand img { height: 40px; width: auto; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 20px; letter-spacing: -.02em; color: var(--green); padding: 12px 0; }
+  .brand i { width: 34px; height: 34px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, var(--sun) 0 46%, transparent 47%), repeating-conic-gradient(var(--sun) 0 12deg, transparent 12deg 30deg); }
+  nav.links { display: none; gap: 26px; font-size: 15px; font-weight: 700; color: var(--mute); } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 24px; border-radius: 16px; font-weight: 800; font-size: 17px; text-decoration: none; }
+  .btn.sun { background: var(--sun); color: #2b2000; } .btn.green { background: var(--green); color: #fff; } .btn.ghost { background: rgba(255, 255, 255, .12); color: #fff; border: 1.5px solid rgba(255, 255, 255, .45); } .btn.line { background: #fff; color: var(--green); border: 1.5px solid var(--line); }
+  .btn.small { min-height: 44px; padding: 0 18px; font-size: 15px; border-radius: 13px; }
+  .hero { background: linear-gradient(165deg, var(--leaf) 0%, var(--green) 62%); color: #fff; position: relative; overflow: hidden; }
+  .hero .shot { width: 100%; height: 176px; object-fit: cover; object-position: 50% 55%; }
+  .hero::after { display: none; content: ""; position: absolute; right: -110px; top: -110px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 197, 49, .95) 0 34%, rgba(255, 197, 49, .28) 35% 52%, rgba(255, 197, 49, .12) 53% 70%, transparent 71%); }
+  .hero .wrap { position: relative; z-index: 1; padding: 24px 0 30px; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--sun); }
+  .hero h1 { font-size: clamp(36px, 9.800vw, 76px); line-height: 1.02; letter-spacing: -.03em; font-weight: 800; margin: 10px 0 12px; max-width: 15ch; }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: #dcebe3; max-width: 38ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--sun); color: #2b2000; }
+  .proof .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 14px 0; }
+  .proof b { display: block; font-size: 15px; font-weight: 800; line-height: 1.2; } .proof span { display: block; font-size: 13px; line-height: 1.3; margin-top: 2px; }
+  .pic { width: 100%; height: 190px; object-fit: cover; border-radius: var(--r); margin-top: 22px; }
+  .cater .pic { margin: 0 0 22px; } .find .pic { margin: 0 0 22px; height: 210px; object-position: 50% 20%; }
+  section { padding: 54px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--coral); }
+  h2 { font-size: clamp(31px, 7.600vw, 48px); line-height: 1.06; letter-spacing: -.03em; font-weight: 800; margin: 10px 0 12px; color: var(--green); }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .dishes { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 24px; }
+  .dishes span { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 11px 17px; font-weight: 700; color: var(--green); font-size: 16px; }
+  .dishes span:nth-child(3n+1) { background: var(--sun); border-color: var(--sun); color: #2b2000; }
+  .three { display: grid; gap: 14px; margin-top: 26px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 22px; }
+  .card b.n { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: var(--green); color: var(--sun); font-size: 18px; margin-bottom: 14px; }
+  .card h3 { font-size: 21px; color: var(--green); margin-bottom: 4px; } .card p { color: var(--mute); font-size: 16px; line-height: 1.5; }
+  .cater { background: var(--green); color: #fff; border-radius: 28px; padding: 32px 22px; position: relative; overflow: hidden; }
+  .cater h2 { color: #fff; } .cater .eyebrow { color: var(--sun); } .cater p { color: #d3e4db; max-width: 50ch; }
+  .occ { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin: 22px 0 24px; }
+  .occ span { background: rgba(255, 255, 255, .09); border: 1px solid rgba(255, 255, 255, .16); border-radius: 14px; padding: 12px 14px; font-weight: 700; font-size: 15px; }
+  .news { display: grid; gap: 14px; margin-top: 24px; }
+  .news .card { border-left: 6px solid var(--sun); } .news small { display: block; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; font-size: 12px; color: var(--coral); margin-bottom: 6px; }
+  .find { background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 28px 22px; box-shadow: var(--shadow); }
+  .find .cta .btn { width: 100%; } address { font-style: normal; color: var(--mute); margin-top: 22px; line-height: 1.7; } address b { color: var(--green); }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 248, 234, .96); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero .wrap { padding: 96px 0 100px; } .hero p.lead { font-size: 22px; max-width: 42ch; } .cta { grid-auto-flow: column; justify-content: start; }
+    section { padding: 88px 0; } .three, .news { grid-template-columns: repeat(3, 1fr); gap: 18px; } .cater { padding: 56px; } .occ { grid-template-columns: repeat(4, 1fr); max-width: 760px; }
+    .find { padding: 48px 56px; } .find .cta .btn { width: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Sunlight Caribbean. This is not the official website.</span>
+  <a href="http://www.sunlightcaribbean.co.uk/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Sunlight Caribbean"><img src="img/logo.png" alt="Sunlight Caribbean" width="600" height="120"></a>
+  <nav class="links" aria-label="Sections"><a href="#food">Our food</a><a href="#catering">Catering</a><a href="#community">Community</a><a href="#find">Find us</a></nav>
+  <a class="btn green small" href="tel:+442089855848">Call</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="shot" src="img/dish.jpg" alt="A dish from the Sunlight Caribbean kitchen" width="700" height="525">
+  <div class="wrap">
+  <span class="tag">Restaurant · Takeaway · Catering</span>
+  <h1>Authentic Caribbean food, cooked fresh in Hackney.</h1>
+  <p class="lead">Jerk chicken, curry goat, oxtail and steam fish from our kitchen on Well Street, with friendly service in a warm, relaxed restaurant.</p>
+  <div class="cta">
+    <a class="btn sun" href="tel:+442089855848">Call 020 8985 5848</a>
+    <a class="btn ghost" href="#catering">Catering for your event</a>
+  </div>
+</div></div>
+
+<div class="proof"><div class="wrap">
+  <div><b>BBC Good Food</b><span>Featured in the magazine</span></div>
+  <div><b>ITV News</b><span>Reported on our free school meals</span></div>
+  <div><b>Cooked fresh</b><span>On the premises, every day</span></div>
+</div></div>
+
+<section id="food"><div class="wrap">
+  <p class="eyebrow">Our food</p>
+  <h2>A fusion of beautiful, exotic tastes.</h2>
+  <p class="sub">From a small snack to a big helping, everything is cooked fresh on the premises with fresh, homemade and locally sourced ingredients.</p>
+  <img class="pic" src="img/jerk-chicken.jpg" alt="Jerk chicken with rice and peas at Sunlight Caribbean" width="400" height="300">
+  <div class="dishes">
+    <span>Jerk Chicken</span><span>Curry Goat</span><span>Oxtail and butter bean</span><span>Steam Fish</span><span>Fried fish</span><span>Stewed chicken</span><span>Roasted chicken</span><span>Fish Tea Soup</span><span>Vegetable Patty</span><span>A selection of curries</span>
+  </div>
+  <div class="three">
+    <div class="card"><b class="n">1</b><h3>Restaurant</h3><p>Enjoy your meal in house. We welcome newcomers every week alongside our regulars, all with the same high standard of service.</p></div>
+    <div class="card"><b class="n">2</b><h3>Takeaway</h3><p>Great food at affordable prices, to take away from 259 Well Street.</p></div>
+    <div class="card"><b class="n">3</b><h3>Catering</h3><p>Indoor and outdoor catering with a lively Caribbean atmosphere, for events of all sizes.</p></div>
+  </div>
+</div></section>
+
+<section id="catering" style="padding-top:0"><div class="wrap">
+  <div class="cater">
+    <img class="pic" src="img/grill.jpg" alt="Chicken on the Sunlight Caribbean grill" width="640" height="480">
+    <p class="eyebrow">Catering</p>
+    <h2>Your event, remembered for the food.</h2>
+    <p>We work with you throughout the planning to deliver the perfect day. No function is too small, inside or outside, and our prices are competitive and affordable.</p>
+    <div class="occ"><span>Weddings</span><span>Christenings</span><span>Parties</span><span>Office lunches</span><span>Corporate events</span><span>Outdoor functions</span><span>Garden parties</span><span>Funerals</span></div>
+    <a class="btn sun" href="mailto:admin@sunlightcaribbean.co.uk?subject=Catering%20quote">Ask for a no-obligation quote</a>
+  </div>
+</div></section>
+
+<section id="community" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">In the news</p>
+  <h2>Feeding Hackney, in every sense.</h2>
+  <div class="news">
+    <div class="card"><small>BBC Good Food</small><h3>Featured in the magazine</h3><p>Sunlight Caribbean Restaurant has been featured in BBC Good Food magazine.</p></div>
+    <div class="card"><small>ITV News</small><h3>Free school meals</h3><p>ITV News reported on Sunlight Caribbean giving away free school meals during the pandemic.</p></div>
+    <div class="card"><small>Charity</small><h3>Food for the homeless</h3><p>Over the years the restaurant has taken part in charitable work, including providing food for the homeless.</p></div>
+  </div>
+</div></section>
+
+<section id="find" style="padding-top:0"><div class="wrap">
+  <div class="find">
+    <img class="pic" src="img/shop-front.jpg" alt="The Sunlight Caribbean shop front on Well Street" width="715" height="601">
+    <p class="eyebrow">Find us</p>
+    <h2>259 Well Street, Hackney.</h2>
+    <p class="sub">Call to ask about the restaurant, the takeaway or our catering.</p>
+    <div class="cta">
+      <a class="btn green" href="tel:+442089855848">Call 020 8985 5848</a>
+      <a class="btn line" href="mailto:admin@sunlightcaribbean.co.uk?subject=Enquiry%20from%20the%20website">Email us</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=259+Well+Street+London+E9+6RG" rel="nofollow noopener">Get directions</a>
+    </div>
+    <address><b>Sunlight Caribbean</b><br>259 Well Street, London E9 6RG<br>admin@sunlightcaribbean.co.uk</address>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Sunlight Caribbean website could look and work on a phone. The wording, logo and photographs come from sunlightcaribbean.co.uk.</p>
+  <p>It is not the official Sunlight Caribbean website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn green" href="tel:+442089855848">Call</a>
+  <a class="btn sun" href="mailto:admin@sunlightcaribbean.co.uk?subject=Catering%20quote">Catering quote</a>
+</div>
+
+</body>
+</html>

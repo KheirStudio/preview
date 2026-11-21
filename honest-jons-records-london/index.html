@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#173826">
+<title>Honest Jon's Records · London · design concept</title>
+<meta name="description" content="A design concept by K Studio for Honest Jon's Records, London. Not the official website.">
+<style>
+  :root { --news: #dcdcd6; --sheet: #f2f2ec; --black: #12301f; --blue: #ee8d2c; --blue-ink: #5e5c1f; --mute: #565650; --line: #b9b9ae; --green: #173826; --olive: #a7a45f; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--black); background: var(--news); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul { margin: 0; } h1, h2 { text-wrap: balance; }
+  .mono { font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Courier New", monospace; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  .concept { background: #000; color: #d8d3c4; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: #ffb05c; white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: var(--olive); border-bottom: 2px solid var(--black); }
+  img { display: block; max-width: 100%; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { text-decoration: none; font-weight: 900; font-size: 23px; letter-spacing: -.04em; padding: 12px 0; line-height: 1; }
+  nav.links { display: none; gap: 26px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; font-weight: 800; font-size: 16px; text-decoration: none; border: 2px solid var(--black); }
+  .btn.black { background: var(--black); color: var(--news); } .btn.blue { background: var(--blue); color: #1b1206; border-color: var(--blue); } .btn.line { background: transparent; color: var(--black); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 14px; }
+  .hero { position: relative; overflow: hidden; border-bottom: 2px solid var(--black); background: var(--green); color: #f2f2ec; }
+  .hero .strip { width: 100%; height: auto; }
+  .hero .wrap { position: relative; z-index: 1; padding: 20px 0 0; }
+  .hero .kicker { color: #cfcd8f; } .hero .btn.line { color: #f2f2ec; border-color: #f2f2ec; } .hero p.lead cite { color: #b9c4b4; }
+  .last { background: var(--green); color: #f2f2ec; } .last h2 { color: #fff; } .last p { color: #c9d2c4; max-width: 46ch; } .last .btn.line { color: #f2f2ec; border-color: #f2f2ec; }
+  .kicker { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--blue-ink); }
+  .hero h1 { font-size: clamp(50px, 14.600vw, 124px); line-height: .9; letter-spacing: -.06em; font-weight: 900; margin: 12px 0 14px; }
+  .hero h1 span { color: var(--blue); }
+  .hero p.lead { font-size: 18px; line-height: 1.5; max-width: 30ch; } .hero p.lead cite { display: block; font-style: normal; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: #b9c4b4; margin-top: 6px; }
+  .cta { display: grid; gap: 10px; margin-top: 22px; }
+  .disc { display: block; width: 280px; height: 140px; margin: 24px auto 0; }
+  section { padding: 54px 0; }
+  .eyebrow { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--blue-ink); }
+  h2 { font-size: clamp(36px, 10vw, 64px); line-height: .96; letter-spacing: -.05em; font-weight: 900; margin: 10px 0 14px; }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .racks { list-style: none; padding: 0; margin-top: 24px; border-top: 2px solid var(--black); }
+  .racks a { display: grid; grid-template-columns: 44px 1fr 24px; align-items: center; min-height: 68px; text-decoration: none; border-bottom: 1px solid var(--black); font-weight: 900; font-size: 30px; letter-spacing: -.04em; }
+  .racks a i { font-style: normal; font-weight: 400; font-size: 12px; letter-spacing: .04em; color: var(--mute); }
+  .racks a svg { justify-self: end; }
+  .labels { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
+  .labels span { border: 1px solid var(--black); padding: 7px 11px; font-size: 13px; line-height: 1.3; background: var(--sheet); }
+  .labels span.on { background: var(--black); color: var(--news); }
+  .tale { background: var(--black); color: #e9e4d6; }
+  .tale h2 { color: #fff; } .tale .eyebrow { color: #ffb05c; } .tale p { color: #cfc9b9; max-width: 56ch; } .tale p + p { margin-top: 14px; }
+  .dates { display: grid; gap: 0; margin: 28px 0; border-top: 1px solid #3a3a36; }
+  .dates div { display: grid; grid-template-columns: 76px 1fr; gap: 14px; padding: 16px 0; border-bottom: 1px solid #3a3a36; align-items: baseline; }
+  .dates b { font-weight: 900; font-size: 26px; letter-spacing: -.04em; color: #ffb05c; } .dates span { color: #cfc9b9; font-size: 16px; line-height: 1.5; }
+  .tale blockquote { margin: 0; font-weight: 800; font-size: 25px; line-height: 1.25; letter-spacing: -.02em; color: #fff; } .tale .by { display: block; margin-top: 14px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: #ffb05c; }
+  .ship { border: 2px solid var(--black); background: var(--sheet); padding: 24px 20px; display: grid; gap: 18px; }
+  .ship h3 { font-weight: 900; font-size: 22px; letter-spacing: -.03em; line-height: 1.1; margin-bottom: 4px; } .ship p { color: var(--mute); font-size: 16px; }
+  .shops { display: grid; gap: 14px; margin-top: 24px; }
+  .shop { border: 2px solid var(--black); background: var(--sheet); padding: 24px 20px; }
+  .shop h3 { font-weight: 900; font-size: 30px; letter-spacing: -.04em; line-height: 1; } .shop address { font-style: normal; color: var(--mute); margin: 8px 0 14px; }
+  .shop .hrs { font-size: 13px; line-height: 1.7; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0; margin-bottom: 18px; }
+  .shop .cta { margin-top: 0; }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 2px solid var(--black); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(232, 232, 226, .97); backdrop-filter: blur(10px); border-top: 2px solid var(--black); }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero .wrap { padding: 80px 0 0; } .hero p.lead { font-size: 22px; max-width: 36ch; } .cta { grid-auto-flow: column; justify-content: start; }
+    .disc { width: 520px; height: 260px; margin-top: 50px; } section { padding: 92px 0; }
+    .racks { columns: 2; column-gap: 48px; } .racks li { break-inside: avoid; } .racks a { font-size: 38px; min-height: 84px; }
+    .dates { grid-template-columns: repeat(3, 1fr); column-gap: 40px; border-top: 0; } .dates div { grid-template-columns: 1fr; border-top: 1px solid #3a3a36; } .tale blockquote { font-size: 36px; max-width: 26ch; }
+    .ship { grid-template-columns: 1fr 1fr; padding: 40px; gap: 40px; } .shops { grid-template-columns: 1fr 1fr; gap: 18px; } .shop { padding: 40px 36px; } .shop .cta { grid-auto-flow: row; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Honest Jon's Records. This is not the official website.</span>
+  <a href="https://honestjons.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Honest Jon's">Honest Jon's</a>
+  <nav class="links mono" aria-label="Sections"><a href="#racks">Shop</a><a href="#labels">Labels</a><a href="#story">Story</a><a href="#shops">Visit</a></nav>
+  <a class="btn black small" href="tel:+442089699822">Call</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="strip" src="img/logo.png" alt="Honest Jon's Records" width="595" height="112">
+  <div class="wrap">
+  <p class="kicker mono">Record shop · Portobello Road · Coal Drops Yard</p>
+  <h1>Honest Jon's. <span>Est. 1974.</span></h1>
+  <p class="lead">“A favourite from the days when Notting Hill still had riots.”<cite class="mono">The Independent</cite></p>
+  <div class="cta">
+    <a class="btn blue" href="https://honestjons.com/shop/Latest_100_arrivals" rel="nofollow">Shop the latest 100 arrivals</a>
+    <a class="btn line" href="#shops">Visit the shops</a>
+  </div>
+  <svg class="disc" viewBox="0 0 300 150" aria-hidden="true">
+    <circle cx="150" cy="150" r="148" fill="#0b0b0b" stroke="#a7a45f" stroke-width="1"/>
+    <g fill="none" stroke="#3b3b3b" stroke-width="1"><circle cx="150" cy="150" r="136"/><circle cx="150" cy="150" r="126"/><circle cx="150" cy="150" r="117"/><circle cx="150" cy="150" r="108"/><circle cx="150" cy="150" r="98"/><circle cx="150" cy="150" r="89"/><circle cx="150" cy="150" r="80"/><circle cx="150" cy="150" r="71"/></g>
+    <path d="M150 2a148 148 0 0 1 104 43L150 150Z" fill="#ffffff" opacity=".07"/>
+    <circle cx="150" cy="150" r="56" fill="#ee8d2c"/><circle cx="150" cy="150" r="48" fill="none" stroke="#f1ede2" stroke-width="1"/>
+    <text x="150" y="118" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="9" letter-spacing="2" fill="#1b1206">ESTABLISHED 1974</text>
+    <circle cx="150" cy="150" r="5" fill="#f1ede2"/>
+  </svg>
+</div></div></div>
+
+<section id="racks"><div class="wrap">
+  <p class="eyebrow mono">The racks</p>
+  <h2>Pick a section.</h2>
+  <p class="sub">Each one opens in the Honest Jon's shop. We ship worldwide.</p>
+  <ul class="racks">
+    <li><a href="https://honestjons.com/shop/category/Blues" rel="nofollow"><i class="mono">01</i>Blues<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://honestjons.com/shop/category/Dance" rel="nofollow"><i class="mono">02</i>Dance<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://honestjons.com/shop/category/Folk" rel="nofollow"><i class="mono">03</i>Folk<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://honestjons.com/shop/category/Jazz" rel="nofollow"><i class="mono">04</i>Jazz<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://honestjons.com/shop/category/Odds" rel="nofollow"><i class="mono">05</i>Odds<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://honestjons.com/shop/category/Outernational" rel="nofollow"><i class="mono">06</i>Outernational<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://honestjons.com/shop/category/Reggae" rel="nofollow"><i class="mono">07</i>Reggae<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://honestjons.com/shop/category/Soul_Funk" rel="nofollow"><i class="mono">08</i>Soul / Funk<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.200" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+  </ul>
+</div></section>
+
+<section id="labels" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow mono">Labels in the shop</p>
+  <h2>From Studio One to Ocora.</h2>
+  <div class="labels mono">
+    <span class="on">Honest Jon's</span><span>Basic Channel</span><span>Basic Replay</span><span>Bullwackies</span><span>Digikiller</span><span>Dub Store</span><span>Dug Out</span><span>Ethiopiques</span><span>Hive Mind</span><span>Maurizio</span><span>Mississippi</span><span>Numero</span><span>Ocora</span><span>Rhythm &amp; Sound</span><span>Studio One</span><span>Sublime Frequencies</span><span>The Trilogy Tapes</span><span>One-Off Records</span><span>Merchandise</span>
+  </div>
+</div></section>
+
+<section id="story" class="tale"><div class="wrap">
+  <p class="eyebrow mono">The story</p>
+  <h2>We buy records for cash.</h2>
+  <p>In 1974, the mosque at 76 Golborne Road, Ladbroke Grove, was a record shop. Previously it had been a butcher's, and the records were displayed on the marble slabs that had been used for cutting meat.</p>
+  <p>Two friends from Liverpool took on the lease. They stickered their own record collections, and put a big sign in the window: WE BUY RECORDS FOR CASH.</p>
+  <div class="dates">
+    <div><b>1974</b><span>Honest Jon's opens on Golborne Road, in the street locals called 'The Town'.</span></div>
+    <div><b>1979</b><span>The move from Golborne Road to our current address in Portobello.</span></div>
+    <div><b>Today</b><span>Two shops: 278 Portobello Road and Coal Drops Yard.</span></div>
+  </div>
+  <blockquote>“Music was just part of it. It was more important, if you came in the door, that we took each other seriously, we had a laugh, we showed respect, we found each other interesting.”</blockquote>
+  <span class="by mono">From the Honest Jon's story</span>
+</div></section>
+
+<section><div class="wrap">
+  <div class="ship">
+    <div><h3>We ship worldwide.</h3><p>The postage rates for your order are displayed before payment.</p></div>
+    <div><h3>EU customers: no further costs.</h3><p>Honest Jon's has enrolled with the European Union 'Import One-Stop Shop'. You will not be charged any additional VAT or duty, nor any handling fees.</p></div>
+  </div>
+</div></section>
+
+<section id="shops" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow mono">Visit</p>
+  <h2>Two shops in London.</h2>
+  <div class="shops">
+    <div class="shop">
+      <h3>Portobello Road</h3>
+      <address>278 Portobello Road, London W10 5TE</address>
+      <p class="hrs mono">Monday to Saturday, 10 till 6<br>Sunday, 11 till 5</p>
+      <div class="cta">
+        <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=278+Portobello+Road+London+W10+5TE" rel="nofollow noopener">Get directions</a>
+      </div>
+    </div>
+    <div class="shop">
+      <h3>Coal Drops Yard</h3>
+      <address>Unit 115, Lower Stable Street, Coal Drops Yard, London N1C 4DR</address>
+      <p class="hrs mono">Monday to Saturday, 11 till 6<br>Sunday, 11 till 5</p>
+      <div class="cta">
+        <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Lower+Stable+Street+Coal+Drops+Yard+London+N1C+4DR" rel="nofollow noopener">Get directions</a>
+      </div>
+    </div>
+  </div>
+  <div class="cta talk">
+    <a class="btn black" href="tel:+442089699822">Call 020 8969 9822</a>
+    <a class="btn line" href="mailto:mail@honestjons.com?subject=Enquiry%20from%20the%20website">Email mail@honestjons.com</a>
+  </div>
+</div></section>
+
+<section class="last"><div class="wrap">
+  <p class="eyebrow mono" style="color:#cfcd8f">Established 1974</p>
+  <h2>The latest 100 arrivals are in the shop now.</h2>
+  <p>We ship worldwide. For EU customers there are no further costs: no additional VAT or duty, nor any handling fees.</p>
+  <div class="cta">
+    <a class="btn blue" href="https://honestjons.com/shop/Latest_100_arrivals" rel="nofollow">Shop the latest 100 arrivals</a>
+    <a class="btn line" href="tel:+442089699822">Call 020 8969 9822</a>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Honest Jon's website could look and work on a phone. The wording and logo come from honestjons.com.</p>
+  <p>It is not the official Honest Jon's Records website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="tel:+442089699822">Call</a>
+  <a class="btn blue" href="https://honestjons.com/shop/Latest_100_arrivals" rel="nofollow">New arrivals</a>
+</div>
+
+</body>
+</html>

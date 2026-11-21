@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Mark Nicholas Design · Islington · design concept</title>
+<meta name="description" content="A design concept by K Studio for Mark Nicholas Design, Islington. Not the official website.">
+<style>
+  :root { --stone: #f2f2f1; --paper: #ffffff; --graphite: #2b2b2b; --clay: #5d5da0; --mute: #666666; --line: #dcdcdc; --white: #fff; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.65 "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: var(--graphite); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol { margin: 0; } h1, h2 { text-wrap: balance; font-weight: 300; }
+  .wrap { width: min(100% - 48px, 1040px); margin-inline: auto; }
+  .concept { background: #111110; color: #d9d6cf; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: #c9c9ff; white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 1px solid var(--line); }
+  img { display: block; max-width: 100%; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: block; padding: 14px 0; } .brand img { height: 27px; width: auto; }
+  nav.links { display: none; gap: 30px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 26px; font-weight: 500; font-size: 14px; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; }
+  .btn.dark { background: var(--graphite); color: #fff; } .btn.line { background: transparent; color: var(--graphite); border: 1px solid var(--graphite); } .btn.clay { background: var(--clay); color: #fff; } .btn.pale { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, .55); }
+  .btn.small { min-height: 44px; padding: 0 18px; font-size: 12px; }
+  .hero { background: var(--stone); position: relative; overflow: hidden; }
+  .hero .shot { width: 100%; height: 178px; object-fit: cover; object-position: 50% 60%; }
+  .hero .wrap { padding: 22px 0 34px; }
+  .pics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 26px; } .pics img { width: 100%; height: 190px; object-fit: cover; }
+  figure { margin: 30px 0 0; } figure img { width: 100%; height: auto; background: #fff; } figcaption { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #a9a9a4; margin-top: 8px; }
+  .kicker { font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--clay); font-weight: 500; }
+  .hero h1 { font-size: clamp(35px, 9.600vw, 82px); line-height: 1.06; letter-spacing: -.025em; margin: 12px 0 12px; max-width: 14ch; }
+  .hero p.lead { font-size: 17px; line-height: 1.55; color: #4d4d4d; max-width: 38ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .plan { display: block; width: 100%; height: auto; margin-top: 34px; }
+  section { padding: 60px 0; }
+  .eyebrow { font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--clay); font-weight: 500; display: flex; align-items: center; gap: 12px; }
+  .eyebrow::before { content: ""; width: 34px; height: 1px; background: var(--clay); }
+  h2 { font-size: clamp(32px, 8.400vw, 52px); line-height: 1.1; letter-spacing: -.02em; margin: 16px 0 14px; }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--graphite); border-bottom: 1px solid var(--graphite); margin-top: 30px; }
+  .facts div { padding: 18px 0; } .facts div + div { border-left: 1px solid var(--line); padding-left: 14px; }
+  .facts b { display: block; font-weight: 300; font-size: 30px; letter-spacing: -.02em; line-height: 1.1; } .facts span { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); line-height: 1.4; display: block; margin-top: 4px; }
+  .rooms { list-style: none; padding: 0; margin-top: 28px; border-top: 1px solid var(--graphite); }
+  .rooms li { display: grid; grid-template-columns: 44px 1fr; align-items: baseline; padding: 17px 0; border-bottom: 1px solid var(--line); font-weight: 300; font-size: 27px; letter-spacing: -.01em; line-height: 1.2; }
+  .rooms li i { font-style: normal; font-size: 12px; letter-spacing: .14em; color: var(--clay); font-weight: 500; }
+  .dark { background: var(--graphite); color: #f1eee8; }
+  .dark h2 { color: #fff; } .dark .eyebrow { color: #c3c3f2; } .dark .eyebrow::before { background: #c3c3f2; } .dark .sub { color: #b8b5ad; }
+  .steps { list-style: none; padding: 0; margin-top: 30px; counter-reset: s; }
+  .steps li { counter-increment: s; display: grid; grid-template-columns: 54px 1fr; gap: 6px; padding: 18px 0; border-top: 1px solid rgba(255, 255, 255, .16); font-size: 17px; line-height: 1.55; color: #dedbd3; }
+  .steps li::before { content: counter(s, decimal-leading-zero); font-weight: 300; font-size: 26px; line-height: 1.15; color: #c3c3f2; letter-spacing: -.02em; }
+  .steps li:last-child { border-bottom: 1px solid rgba(255, 255, 255, .16); }
+  .dark .cta { margin-top: 30px; }
+  .groups { display: grid; gap: 0; margin-top: 28px; border-top: 1px solid var(--graphite); }
+  .group { padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .group h3 { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--clay); font-weight: 500; margin-bottom: 8px; }
+  .group p { font-weight: 300; font-size: 21px; line-height: 1.45; letter-spacing: -.005em; }
+  .show { background: var(--stone); padding: 34px 24px; border: 1px solid var(--line); }
+  .show address { font-style: normal; font-weight: 300; font-size: 23px; line-height: 1.4; margin: 6px 0 4px; }
+  .show .meta { color: var(--mute); font-size: 16px; } .show .cta .btn { width: 100%; }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 8px; letter-spacing: .1em; font-size: 13px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero .wrap { padding: 96px 0 0; } .hero p.lead { font-size: 21px; max-width: 44ch; } .cta { grid-auto-flow: column; justify-content: start; }
+    .plan { margin-top: 60px; } section { padding: 104px 0; } .facts b { font-size: 46px; } .facts div + div { padding-left: 28px; }
+    .rooms { columns: 2; column-gap: 56px; } .rooms li { break-inside: avoid; font-size: 32px; }
+    .steps { columns: 2; column-gap: 56px; } .steps li { break-inside: avoid; }
+    .groups { grid-template-columns: 1fr 1fr; column-gap: 56px; } .show { padding: 64px; } .show .cta .btn { width: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Mark Nicholas Design. This is not the official website.</span>
+  <a href="http://marknicholasdesign.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Mark Nicholas Design"><img src="img/logo.jpg" alt="Mark Nicholas Design" width="400" height="50"></a>
+  <nav class="links" aria-label="Sections"><a href="#design">Design</a><a href="#process">Process</a><a href="#projects">Projects</a><a href="#showroom">Showroom</a></nav>
+  <a class="btn dark small" href="tel:+442072787573">Call</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="shot" src="img/kitchen.jpg" alt="A London kitchen designed and installed by Mark Nicholas Design" width="700" height="500">
+  <div class="wrap">
+  <p class="kicker">Award-winning interior design studio · Angel, London</p>
+  <h1>The ideal space you have always wished you had.</h1>
+  <p class="lead">We design and install bathroom, kitchen, bedroom and living room interiors, and manufacture one-off pieces, working within your allocated budget.</p>
+  <div class="cta">
+    <a class="btn dark" href="tel:+442072787573">Book a showroom meeting</a>
+    <a class="btn line" href="mailto:enquiries@marknicholasdesign.com?subject=Design%20enquiry">Email the studio</a>
+  </div>
+</div></div></div>
+
+<section id="design"><div class="wrap">
+  <p class="eyebrow">The studio</p>
+  <h2>An award-winning studio, founded in 1999.</h2>
+  <p class="sub">Renowned for the finest home interiors on display in London. Our clients have their own preference, their own needs, their own way of organising, and our products can be infinitely configured and reconfigured to suit each client's lifestyle.</p>
+  <div class="facts">
+    <div><b>1999</b><span>Founded</span></div>
+    <div><b>35+</b><span>Years of design experience</span></div>
+    <div><b>N1</b><span>Studio and showroom</span></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">What we design</p>
+  <h2>Every type of space, irrespective of size or shape.</h2>
+  <p class="sub">We can assist on all architectural styles, whether you require a classical, modern or minimalist design.</p>
+  <ul class="rooms">
+    <li><i>01</i>Bathrooms</li><li><i>02</i>Kitchens</li><li><i>03</i>Bedrooms</li><li><i>04</i>Living rooms</li><li><i>05</i>Gardens</li><li><i>06</i>One-off pieces</li>
+  </ul>
+</div></section>
+
+<section id="process" class="dark"><div class="wrap">
+  <p class="eyebrow">The MND design process</p>
+  <h2>From a first meeting to the finished room.</h2>
+  <p class="sub">Our designers provide expert advice and can guide the whole process from start to finish.</p>
+  <figure><img src="img/drawing.jpg" alt="A hand drawn design by Mark Nicholas Design" width="700" height="459"><figcaption>Hand drawn design of a house in Sweden</figcaption></figure>
+  <ol class="steps">
+    <li>Book an initial meeting at our showroom to discuss your individual requirements.</li>
+    <li>Review the products available and develop the client brief with our design team.</li>
+    <li>A dedicated member of our design team is appointed to look after your project.</li>
+    <li>Your designer can visit your home to measure and survey the space if required. There is a charge for this service.</li>
+    <li>Your designer presents floor plans and sketch proposals at the studio.</li>
+    <li>Your designer fully discusses the products proposed for your home.</li>
+    <li>Your designer discusses the design detailing and the other options available.</li>
+    <li>When the design is finalised, your designer orders the products, manufactured by our worldwide partnership suppliers and shipped to the UK.</li>
+    <li>Your designer personally assists with overseeing the installation process.</li>
+    <li>Your designer remains available for design input on further projects.</li>
+  </ol>
+  <div class="cta">
+    <a class="btn clay" href="tel:+442072787573">Call 020 7278 7573</a>
+    <a class="btn pale" href="mailto:enquiries@marknicholasdesign.com?subject=Initial%20meeting">Ask for an initial meeting</a>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <p class="eyebrow">Projects</p>
+  <h2>In London, and overseas.</h2>
+  <div class="pics"><img src="img/bathroom.jpg" alt="A London bathroom by Mark Nicholas Design" width="500" height="700"><img src="img/kitchen-2.jpg" alt="A kitchen by Mark Nicholas Design" width="700" height="500"></div>
+  <div class="groups">
+    <div class="group"><h3>Residential</h3><p>London House · London Apartment · London Kitchen · London Basement Kitchen · London Bathroom · Marble Bathroom · Classic Bathroom · Shower Rooms · Stairs</p></div>
+    <div class="group"><h3>Commercial</h3><p>Chelsea Mews · Culross Street</p></div>
+    <div class="group"><h3>Hotel</h3><p>Duke's Mews</p></div>
+    <div class="group"><h3>Overseas</h3><p>Bathroom in Nice, France · Summer House, Sweden</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Our partners</p>
+  <h2>Products from our partnership suppliers.</h2>
+  <div class="groups">
+    <div class="group"><h3>Kitchen</h3><p>Appliances · Kitchen furniture · Kitchen taps · Kitchen worktops</p></div>
+    <div class="group"><h3>Bathroom</h3><p>Bathroom furniture · Sanitaryware · Showers · Radiators and towel rails · Brassware</p></div>
+    <div class="group"><h3>And more</h3><p>Bedroom and living · Tiles · Flooring · Lighting</p></div>
+  </div>
+</div></section>
+
+<section id="showroom" style="padding-top:0"><div class="wrap">
+  <div class="show">
+    <p class="eyebrow">Showroom</p>
+    <address>32-34 Penton Street<br>Islington<br>London N1 9QA</address>
+    <p class="meta">T 020 7278 7573 · enquiries@marknicholasdesign.com</p>
+    <div class="cta">
+      <a class="btn dark" href="tel:+442072787573">Call 020 7278 7573</a>
+      <a class="btn line" href="mailto:enquiries@marknicholasdesign.com?subject=Design%20enquiry">Email the studio</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=32+Penton+Street+London+N1+9QA" rel="nofollow noopener">Get directions</a>
+    </div>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Mark Nicholas Design website could look and work on a phone. The wording, logo and project photographs come from marknicholasdesign.com.</p>
+  <p>It is not the official Mark Nicholas Design website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="mailto:enquiries@marknicholasdesign.com?subject=Design%20enquiry">Email</a>
+  <a class="btn dark" href="tel:+442072787573">Book a meeting</a>
+</div>
+
+</body>
+</html>

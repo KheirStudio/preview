@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f26a0a">
+<title>King's Cross Computer Centre · repairs · design concept</title>
+<meta name="description" content="A design concept by K Studio for King's Cross Computer Centre. Not the official website.">
+<style>
+  :root { --night: #124e68; --slate: #227293; --orange: #f26a0a; --orange-ink: #2a1200; --sky: #bfe9f7; --ink: #10303d; --mute: #55666e; --line: #d9e5ea; --paper: #f3f8f9; --red: #c80000; --r: 18px; --shadow: 0 12px 30px rgba(18, 78, 104, .14); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul { margin: 0; } h1, h2 { text-wrap: balance; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  .concept { background: #05080f; color: #cfd6e2; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: var(--orange); white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: var(--orange); color: #fff; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { text-decoration: none; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 16px; letter-spacing: .05em; text-transform: uppercase; line-height: 1.2; padding: 12px 0; color: #fff; }
+  .name { font-family: "Arial Rounded MT Bold", "Cooper Black", "Helvetica Rounded", "Trebuchet MS", sans-serif; font-size: 22px; color: #fff; margin: 16px 0 0; text-shadow: 0 2px 0 rgba(0, 0, 0, .25); }
+  .btn.white { background: #fff; color: var(--night); }
+  .also { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 20px; } .also span { font-size: 14px; font-weight: 700; padding: 7px 12px; border-radius: 999px; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .28); color: #fff; }
+  .proof { background: #fff; border-bottom: 1px solid var(--line); } .proof .wrap { display: grid; gap: 0; }
+  .proof .wrap > div { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: center; padding: 13px 0; font-weight: 700; color: var(--night); font-size: 16px; line-height: 1.35; } .proof .wrap > div + div { border-top: 1px solid var(--line); }
+  .proof svg { display: block; }
+  nav.links { display: none; gap: 26px; font-size: 15px; font-weight: 700; color: #b9c3d6; } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 24px; border-radius: 12px; font-weight: 800; font-size: 17px; text-decoration: none; }
+  .btn.orange { background: var(--orange); color: var(--orange-ink); } .btn.ghost { background: rgba(255, 255, 255, .08); color: #fff; border: 1.5px solid rgba(255, 255, 255, .35); } .btn.dark { background: var(--night); color: #fff; } .btn.line { background: #fff; color: var(--night); border: 1.5px solid var(--line); }
+  .btn.small { min-height: 44px; padding: 0 18px; font-size: 15px; }
+  .hero { background: var(--night); color: #fff; position: relative; overflow: hidden; background-image: linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px); background-size: 34px 34px; }
+  .hero .wrap { position: relative; z-index: 1; padding: 30px 0 36px; }
+  .live { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 800; padding: 8px 14px; border-radius: 999px; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .35); color: #fff; }
+  .live i { width: 9px; height: 9px; border-radius: 50%; background: #45e08a; box-shadow: 0 0 0 4px rgba(69, 224, 138, .2); }
+  .hero h1 { font-size: clamp(38px, 10.400vw, 78px); line-height: 1; letter-spacing: -.035em; font-weight: 800; margin: 8px 0 14px; max-width: 13ch; }
+  .hero h1 span { color: var(--orange); }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: #d6eaf2; max-width: 38ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  section { padding: 54px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+  h2 { font-size: clamp(31px, 7.600vw, 48px); line-height: 1.06; letter-spacing: -.03em; font-weight: 800; margin: 10px 0 12px; color: var(--night); }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 26px; }
+  .tile { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 18px 16px; }
+  .tile svg { display: block; margin-bottom: 12px; }
+  .tile h3 { font-size: 17px; line-height: 1.25; color: var(--night); }
+  .visit { background: var(--slate); color: #fff; border-radius: 26px; padding: 30px 22px; }
+  .visit h2 { color: #fff; } .visit .eyebrow { color: var(--sky); } .visit p { color: #d6eaf2; max-width: 52ch; }
+  .promise { display: grid; gap: 12px; margin: 22px 0 24px; }
+  .promise div { background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .14); border-radius: 16px; padding: 16px 18px; }
+  .promise b { display: block; font-size: 24px; letter-spacing: -.02em; color: #ffc08a; } .promise span { font-size: 15px; color: #d6eaf2; }
+  .list { columns: 1; margin-top: 22px; padding: 0; list-style: none; }
+  .list li { break-inside: avoid; padding: 11px 0 11px 30px; border-bottom: 1px solid var(--line); position: relative; font-weight: 600; color: var(--night); font-size: 16px; }
+  .list li::before { content: ""; position: absolute; left: 4px; top: 19px; width: 12px; height: 7px; border-left: 2.500px solid var(--orange); border-bottom: 2.500px solid var(--orange); transform: rotate(-45deg); }
+  .green { background: #fff; border: 1px solid var(--line); border-left: 6px solid #2fbf71; border-radius: var(--r); padding: 22px; margin-top: 26px; }
+  .green h3 { font-size: 20px; color: var(--night); margin-bottom: 4px; } .green p { color: var(--mute); font-size: 16px; }
+  .find { background: #fff; border: 1px solid var(--line); border-radius: 26px; padding: 28px 22px; box-shadow: var(--shadow); }
+  .find .cta .btn { width: 100%; } address { font-style: normal; color: var(--mute); margin-top: 22px; line-height: 1.7; } address b { color: var(--night); }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .96); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero .wrap { padding: 96px 0 100px; } .hero p.lead { font-size: 22px; max-width: 44ch; } .cta { grid-auto-flow: column; justify-content: start; }
+    section { padding: 88px 0; } .grid { grid-template-columns: repeat(4, 1fr); gap: 16px; } .visit { padding: 56px; } .promise { grid-template-columns: repeat(3, 1fr); } .list { columns: 2; column-gap: 48px; }
+    .find { padding: 48px 56px; } .find .cta .btn { width: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for King's Cross Computer Centre. This is not the official website.</span>
+  <a href="http://www.kingscrosscomputercentre.co.uk/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="King's Cross Computer Centre">Computer Repair Centre</a>
+  <nav class="links" aria-label="Sections"><a href="#repairs">Repairs</a><a href="#visits">Home visits</a><a href="#business">Business</a><a href="#find">Find us</a></nav>
+  <a class="btn white small" href="tel:+442077137358">Call</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero"><div class="wrap">
+  <span class="live"><i></i>Open 8:30am to 10:30pm, every day</span>
+  <p class="name">King's Cross Computer Centre</p>
+  <h1>Computer repairs, <span>two minutes from King's Cross.</span></h1>
+  <p class="lead">A full-service computer shop on Gray's Inn Road. Bring it in, or book an engineer to visit your home or business anywhere in London.</p>
+  <div class="cta">
+    <a class="btn orange" href="tel:+442077137358">Call 020 7713 7358</a>
+    <a class="btn ghost" href="#find">Find the shop</a>
+  </div>
+  <div class="also"><span>Laptop and PC repairs</span><span>Internet</span><span>Printing</span><span>Photocopy</span><span>Scan</span><span>Fax</span></div>
+</div></div>
+
+<div class="proof"><div class="wrap">
+  <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f26a0a" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span>We aim to reach you the same day you call, 48 hours at the latest</span></div>
+  <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f26a0a" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span>Fixed rates available</span></div>
+  <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f26a0a" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.500 4.500 4.500L19 7.500"/></svg><span>About two minutes' walk from King's Cross station</span></div>
+</div></div>
+
+<section id="repairs"><div class="wrap">
+  <p class="eyebrow">Repair services</p>
+  <h2>Whatever has gone wrong, we fix it.</h2>
+  <p class="sub">PCs and laptops, for home users and small businesses. Fixed rates available.</p>
+  <div class="grid">
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg><h3>PC and laptop repair</h3></div>
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h6M9 18h6"/></svg><h3>Screen replacement</h3></div>
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.700 3.600 3 8 3s8-1.300 8-3V6M4 12v6c0 1.700 3.600 3 8 3s8-1.300 8-3v-6"/></svg><h3>Data recovery and backup</h3></div>
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5.500V11c0 5 3.400 9.600 8 11 4.600-1.400 8-6 8-11V5.500L12 2Z"/><path d="m8.500 12 2.500 2.500 4.700-5"/></svg><h3>Virus and spyware check</h3></div>
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg><h3>PC performance</h3></div>
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg><h3>Parts and upgrades</h3></div>
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.500a10 10 0 0 1 14 0M8 15.500a6 6 0 0 1 8 0"/><circle cx="12" cy="19" r="1"/></svg><h3>Wired and wireless networks</h3></div>
+    <div class="tile"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2"/><rect x="6" y="14" width="12" height="7"/></svg><h3>Printer service and support</h3></div>
+  </div>
+</div></section>
+
+<section id="visits" style="padding-top:0"><div class="wrap">
+  <div class="visit">
+    <p class="eyebrow">Home visits</p>
+    <h2>We come to you, and we turn up on time.</h2>
+    <p>Quick-response computer support for homes across Greater London. When you call, we arrange a time that suits you and we stick to it.</p>
+    <div class="promise">
+      <div><b>Same day</b><span>is our aim, from the moment you call</span></div>
+      <div><b>48 hours</b><span>at the latest, a technician will be with you</span></div>
+      <div><b>On time</b><span>agree 9 to 10am and we arrive between 9 and 10am</span></div>
+    </div>
+    <a class="btn orange" href="tel:+442077137358">Book an engineer</a>
+  </div>
+</div></section>
+
+<section id="business" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Home and small business support</p>
+  <h2>The things people call us about.</h2>
+  <ul class="list">
+    <li>Computer crashes or slowing down</li><li>Data backup and hard drive recovery</li><li>Suspected spyware and viruses</li><li>Software installation and upgrades</li><li>Hardware installation and upgrades</li><li>Windows troubleshooting and system restoration</li><li>Sharing an internet connection between PCs</li><li>One-to-one home computer tuition</li>
+  </ul>
+  <div class="green"><h3>Recycle your old equipment</h3><p>We help customers and the local community recycle computers and peripherals, and we can wipe important data from your equipment first.</p></div>
+</div></section>
+
+<section id="find" style="padding-top:0"><div class="wrap">
+  <div class="find">
+    <p class="eyebrow">Find us</p>
+    <h2>319 to 321 Gray's Inn Road.</h2>
+    <p class="sub">About two minutes' walk from King's Cross station. Open 8:30am to 10:30pm, Monday to Sunday.</p>
+    <div class="cta">
+      <a class="btn dark" href="tel:+442077137358">Call 020 7713 7358</a>
+      <a class="btn line" href="tel:+442072785780">Or 020 7278 5780</a>
+      <a class="btn line" href="mailto:computercentre61@googlemail.com?subject=Enquiry%20from%20the%20website">Email us</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=319+Grays+Inn+Road+London+WC1X+8PX" rel="nofollow noopener">Get directions</a>
+    </div>
+    <address><b>King's Cross Computer Centre Ltd</b><br>319 to 321 Gray's Inn Road, Camden, London WC1X 8PX<br>computercentre61@googlemail.com</address>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the King's Cross Computer Centre website could look and work on a phone. The wording and colours come from kingscrosscomputercentre.co.uk.</p>
+  <p>It is not the official King's Cross Computer Centre website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=319+Grays+Inn+Road+London+WC1X+8PX" rel="nofollow noopener">Directions</a>
+  <a class="btn orange" href="tel:+442077137358">Call now</a>
+</div>
+
+</body>
+</html>

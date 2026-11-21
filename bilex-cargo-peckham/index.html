@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Bilex Cargo · cargo to Nigeria · design concept</title>
+<meta name="description" content="A design concept by K Studio for Bilex Cargo, Peckham. Not the official website.">
+<style>
+  :root { --blue: #0068b0; --blue-2: #004e86; --red: #d3202a; --coal: #333333; --coal-2: #4a4a4a; --ink: #222222; --mute: #5d6268; --paper: #f4f5f6; --line: #dfe2e5; --r: 10px; --shadow: 0 10px 26px rgba(0, 40, 80, .12); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol { margin: 0; } h1, h2 { text-wrap: balance; } img, svg { display: block; max-width: 100%; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  .concept { background: #1c1c1c; color: #dcdcdc; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: #8fcbff; white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 3px solid var(--red); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: block; padding: 6px 0; } .brand img { height: 50px; width: auto; }
+  nav.links { display: none; gap: 24px; font-size: 14px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--coal); } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border-radius: var(--r); font-weight: 800; font-size: 17px; text-decoration: none; text-align: center; }
+  .btn.red { background: var(--red); color: #fff; } .btn.blue { background: var(--blue); color: #fff; } .btn.line { background: #fff; color: var(--blue-2); border: 1.5px solid var(--blue); } .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .6); } .btn.white { background: #fff; color: var(--blue-2); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .btn.stack { flex-direction: column; gap: 1px; line-height: 1.2; padding: 9px 22px; min-height: 60px; } .btn.stack small { font-weight: 600; font-size: 14px; opacity: .92; }
+  .hero { background: var(--coal); color: #fff; position: relative; overflow: hidden; }
+  .hero .wrap { position: relative; z-index: 1; padding: 30px 0 34px; }
+  .route { width: 100%; height: auto; margin-bottom: 16px; }
+  .kicker { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #8fcbff; }
+  .hero h1 { font-size: clamp(38px, 10.600vw, 80px); line-height: 1; letter-spacing: -.03em; font-weight: 800; margin: 8px 0 12px; text-transform: uppercase; }
+  .hero h1 span { color: #ff5a62; }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: #e2e2e2; max-width: 38ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--blue); color: #fff; }
+  .proof .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .proof .wrap > div { padding: 16px 12px 16px 0; } .proof .wrap > div:nth-child(even) { padding-left: 16px; border-left: 1px solid rgba(255, 255, 255, .25); } .proof .wrap > div:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, .25); }
+  .proof b { display: block; font-size: 24px; font-weight: 800; line-height: 1.05; letter-spacing: -.01em; } .proof span { display: block; font-size: 14px; line-height: 1.35; color: #dcecf8; margin-top: 4px; }
+  section { padding: 50px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+  h2 { font-size: clamp(30px, 8vw, 50px); line-height: 1.06; letter-spacing: -.025em; font-weight: 800; margin: 8px 0 12px; color: var(--blue-2); }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .ways { display: grid; gap: 10px; margin-top: 22px; }
+  .way { display: grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px; text-decoration: none; box-shadow: var(--shadow); }
+  .way i { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--coal); color: #fff; font-style: normal; font-weight: 800; font-size: 19px; }
+  .way b { display: block; font-size: 18px; color: var(--blue-2); line-height: 1.2; } .way span { font-size: 15px; color: var(--mute); }
+  .way.main { border: 2px solid var(--red); } .way.main i { background: var(--red); }
+  .svc { display: grid; gap: 12px; margin-top: 22px; }
+  .card { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 14px; padding: 20px; }
+  .card h3 { font-size: 21px; color: var(--blue-2); margin-bottom: 6px; } .card p { color: var(--mute); font-size: 16px; line-height: 1.55; }
+  .opts { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 0; }
+  .opts li { padding: 11px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.45; color: var(--mute); } .opts li b { display: block; color: var(--ink); }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+  .chips span { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-weight: 700; font-size: 15px; color: var(--coal); }
+  .rates { background: var(--coal); color: #fff; border-radius: 18px; padding: 26px 20px; }
+  .rates h2 { color: #fff; } .rates .eyebrow { color: #8fcbff; } .rates p { color: #dcdcdc; max-width: 50ch; }
+  table.price { width: 100%; border-collapse: collapse; margin: 18px 0 14px; font-size: 16px; }
+  table.price th { text-align: left; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #a9d4f7; padding: 0 0 8px; font-weight: 700; } table.price th:not(:first-child), table.price td:not(:first-child) { text-align: right; }
+  table.price td { padding: 11px 0; border-top: 1px solid rgba(255, 255, 255, .18); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .rates small { display: block; font-size: 14px; color: #c9c9c9; line-height: 1.5; } .rates .btn { margin-top: 18px; width: 100%; }
+  .last { background: var(--blue); color: #fff; }
+  .last h2 { color: #fff; } .last p { color: #dcecf8; max-width: 46ch; } .last .cta .btn { width: 100%; }
+  .last .who { display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: center; margin-top: 24px; background: #fff; color: var(--ink); border-radius: 14px; padding: 14px 16px; }
+  .last address { font-style: normal; font-size: 15px; line-height: 1.55; color: var(--mute); } .last address b { color: var(--ink); }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.5fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero .wrap { padding: 70px 0 80px; } .route { max-width: 560px; } .hero p.lead { font-size: 21px; max-width: 44ch; } .cta { grid-auto-flow: column; justify-content: start; }
+    .proof .wrap { grid-template-columns: repeat(4, 1fr); } .proof .wrap > div { border-top: 0 !important; border-left: 0 !important; padding: 24px 20px 24px 0 !important; }
+    section { padding: 84px 0; } .ways { grid-template-columns: repeat(3, 1fr); gap: 16px; } .svc { grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+    .rates { padding: 52px; } .rates .btn { width: auto; } table.price { max-width: 620px; } .last .cta .btn { width: auto; } .last .who { max-width: 520px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Bilex Cargo. This is not the official website.</span>
+  <a href="http://www.bilexcargo.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Bilex Cargo Express"><img src="img/logo.png" alt="Bilex Cargo Express" width="234" height="121"></a>
+  <nav class="links" aria-label="Sections"><a href="#ways">Send cargo</a><a href="#services">Services</a><a href="#rates">Price list</a><a href="#contact">Contact us</a></nav>
+  <a class="btn red small" href="tel:+442072778585">Call us now</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero"><div class="wrap">
+  <svg class="route" viewBox="0 0 346 74" fill="none" aria-hidden="true">
+    <path d="M26 56C96 -6 250 -6 320 56" stroke="#8fcbff" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <circle cx="26" cy="56" r="7" fill="#fff"/><circle cx="320" cy="56" r="7" fill="#ff5a62"/>
+    <path d="m164 4 22 7-22 7 5-7Z" fill="#fff"/>
+    <text x="26" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">UK</text>
+    <text x="320" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">NIGERIA</text>
+  </svg>
+  <p class="kicker">Air freight · Sea freight · Door to door</p>
+  <h1>Door to door cargo <span>to Nigeria.</span></h1>
+  <p class="lead">An affordable and reliable way to send your cargo to Nigeria and around the world. We make shipping your goods fast, secure and easy.</p>
+  <div class="cta">
+    <a class="btn red stack" href="tel:+442072778585">Book a collection<small>Call us now on 020 7277 8585</small></a>
+    <a class="btn ghost" href="#rates">See the price list</a>
+  </div>
+</div></div>
+
+<div class="proof"><div class="wrap">
+  <div><b>36 states</b><span>and Abuja: delivered to any address</span></div>
+  <div><b>Anywhere in the UK</b><span>We can arrange to pick up your consignment</span></div>
+  <div><b>Customs cleared</b><span>Then delivered direct to the door</span></div>
+  <div><b>UK registered</b><span>Bilex International, company no. 7871198</span></div>
+</div></div>
+
+<section id="ways"><div class="wrap">
+  <p class="eyebrow">Send your cargo</p>
+  <h2>3 ways to send your cargo.</h2>
+  <div class="ways">
+    <a class="way main" href="tel:+442072778585"><i>1</i><span><b>By telephone</b><span>Call us now on 020 7277 8585</span></span></a>
+    <a class="way" href="http://www.bilexcargo.com/online_booking.php" rel="nofollow"><i>2</i><span><b>Online</b><span>Book a collection date and time on the Bilex Cargo site</span></span></a>
+    <a class="way" href="mailto:info@bilexcargo.com?subject=Cargo%20enquiry"><i>3</i><span><b>At an agent</b><span>Ask us for your nearest agent: info@bilexcargo.com</span></span></a>
+  </div>
+</div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Services</p>
+  <h2>A service you can rely on.</h2>
+  <p class="sub">Whether you are sending your goods to a family member or a business associate, our priority is a reliable, first class service.</p>
+  <div class="svc">
+    <div class="card">
+      <h3>Door to door services</h3>
+      <p>We take your shipment from the door at the originating address, transport it to the destination country, clear it through customs and deliver it direct to the door at the destination address.</p>
+      <ul class="opts">
+        <li><b>Door to door</b>Collected anywhere in the UK, delivered to your specified address in Nigeria.</li>
+        <li><b>Door to office</b>Collected from your door in the UK, for collection at our office in Nigeria.</li>
+        <li><b>Office to door</b>Bring the goods to our office in London, delivered direct to the door.</li>
+        <li><b>Office to office</b>Bring the goods to our office in London, for collection at our office in Nigeria.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Air freight</h3>
+      <p>From the United Kingdom to Nigeria and a host of EU and African countries, consolidated or direct. We use premium airfreight carriers with established routing for a competitive and reliable service.</p>
+    </div>
+    <div class="card">
+      <h3>Sea freight</h3>
+      <p>Containers, break bulk, flat racks, LCL and gateway consolidations. We handle all sea shipments originating from the United Kingdom to Nigeria seaports.</p>
+    </div>
+    <div class="card">
+      <h3>Storage services</h3>
+      <p>If you need to store your items prior to shipment, our storage facilities are secure. Contact us for storage prices, which are based on the number of boxes and how long the goods stay with us.</p>
+    </div>
+  </div>
+  <div class="chips">
+    <span>Car, van and truck shipment</span><span>Container shipment</span><span>Cargo consolidation</span><span>Courier services</span><span>Product sourcing and procurement</span><span>Removal services</span>
+  </div>
+</div></section>
+
+<section id="rates" style="padding-top:0"><div class="wrap">
+  <div class="rates">
+    <p class="eyebrow">Price list</p>
+    <h2>Cargo rates to Nigeria.</h2>
+    <p>We aim to give you the cheapest and unbeatable prices for your shipping needs. From the Bilex Cargo price list:</p>
+    <table class="price">
+      <tr><th>State</th><th>Rate (£)</th><th>Min weight (kg)</th></tr>
+      <tr><td>Lagos</td><td>3.50</td><td>40</td></tr>
+      <tr><td>Oyo</td><td>4.40</td><td>40</td></tr>
+      <tr><td>Abuja</td><td>4.50</td><td>40</td></tr>
+      <tr><td>Ogun</td><td>4.50</td><td>40</td></tr>
+      <tr><td>Rivers</td><td>4.50</td><td>50</td></tr>
+      <tr><td>All other states</td><td>4.50</td><td>40 to 50</td></tr>
+    </table>
+    <small>The same rate applies for delivery to an address or collection only. Packages under the minimum delivery weight: total charge plus £10 to other destinations, with no extra charge for Lagos collection.</small>
+    <a class="btn white stack" href="tel:+442072778585">Call for your quote<small>020 7277 8585</small></a>
+  </div>
+</div></section>
+
+<section class="last" id="contact"><div class="wrap">
+  <h2>Book your collection.</h2>
+  <p>We are always available to attend to your enquiries. Call us, email us, or bring your goods to our office in London.</p>
+  <div class="cta">
+    <a class="btn white" href="tel:+442072778585">Call us now on 020 7277 8585</a>
+    <a class="btn ghost" href="tel:+447904292484">Mobile: 07904 292484</a>
+    <a class="btn ghost" href="mailto:info@bilexcargo.com?subject=Cargo%20enquiry">Mail us now on info@bilexcargo.com</a>
+    <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=92+Peckham+High+Street+London+SE15+5ED" rel="nofollow noopener">Get directions</a>
+  </div>
+  <div class="who">
+    <img src="img/bilex-international.png" alt="Bilex International" width="234" height="121">
+    <address><b>Head office</b><br>Bilex International, 92 Peckham High Street, London SE15 5ED<br><b>Warehouse</b><br>118-120 Peckham High Street</address>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Bilex Cargo website could look and work on a phone. The wording, prices and logos come from bilexcargo.com.</p>
+  <p>It is not the official Bilex Cargo website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="#rates">Price list</a>
+  <a class="btn red" href="tel:+442072778585">Book a collection</a>
+</div>
+
+</body>
+</html>

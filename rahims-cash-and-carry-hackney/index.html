@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Rahims · cash and carry · design concept</title>
+<meta name="description" content="A design concept by K Studio for Rahims, London. Not the official website.">
+<style>
+  :root { --red: #d01f2b; --red-2: #a9151f; --orange: #f47b20; --wood: #2f1a0c; --wood-2: #4b2d17; --ink: #2b2b2b; --mute: #666; --paper: #f5f4f1; --line: #e3e0da; --r: 12px; --shadow: 0 10px 28px rgba(47, 26, 12, .12); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol { margin: 0; } h1, h2 { text-wrap: balance; } img { display: block; max-width: 100%; }
+  .cond { font-family: Dosis, "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif; font-weight: 700; letter-spacing: .005em; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  .concept { background: #1b0f07; color: #e6dcd3; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: #ffb37a; white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 3px solid var(--red); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: block; padding: 10px 0; } .brand img { height: 36px; width: auto; }
+  nav.links { display: none; gap: 26px; font-size: 15px; font-weight: 700; color: var(--mute); text-transform: uppercase; letter-spacing: .06em; } nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 54px; padding: 0 22px; border-radius: var(--r); font-weight: 800; font-size: 17px; text-decoration: none; text-align: center; }
+  .btn.red { background: var(--red); color: #fff; } .btn.wood { background: var(--wood); color: #fff; } .btn.white { background: #fff; color: var(--red); }
+  .btn.line { background: #fff; color: var(--ink); border: 1.5px solid #cfcac1; } .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .6); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .btn.stack { flex-direction: column; gap: 1px; line-height: 1.2; padding: 9px 22px; min-height: 60px; } .btn.stack small { font-weight: 600; font-size: 14px; opacity: .92; }
+  .hero { background: #fff; }
+  .hero .shot { width: 100%; height: 190px; object-fit: cover; object-position: 50% 42%; }
+  .hero .wrap { padding: 22px 0 30px; }
+  .kicker { font-size: 13px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+  .hero h1 { font-size: clamp(42px, 12vw, 84px); line-height: 1; margin: 8px 0 12px; color: var(--wood); }
+  .hero p.lead { font-size: 18px; line-height: 1.5; color: #4a4a4a; max-width: 38ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--wood); color: #fff; background-image: linear-gradient(90deg, rgba(255, 255, 255, .035) 0 50%, transparent 50%); background-size: 46px 100%; }
+  .proof .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .proof .wrap > div { padding: 18px 12px 18px 0; } .proof .wrap > div:nth-child(even) { padding-left: 16px; border-left: 1px solid rgba(255, 255, 255, .16); } .proof .wrap > div:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, .16); }
+  .proof b { display: block; font-size: 27px; line-height: 1.05; color: #ffb37a; white-space: nowrap; } .proof span { font-size: 14px; line-height: 1.35; color: #eadfd6; display: block; margin-top: 4px; }
+  section { padding: 50px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+  h2 { font-size: clamp(34px, 9.200vw, 56px); line-height: 1.02; margin: 8px 0 12px; color: var(--wood); }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .panel { background: #fff; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); }
+  .panel > img { width: 100%; height: 190px; object-fit: cover; }
+  .panel .in { padding: 22px 20px 24px; }
+  .how { list-style: none; padding: 0; margin: 18px 0 20px; counter-reset: s; display: grid; gap: 12px; }
+  .how li { counter-increment: s; display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: start; font-size: 16px; line-height: 1.5; }
+  .how li::before { content: counter(s); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--red); color: #fff; font-weight: 800; }
+  .how li b { display: block; color: var(--wood); }
+  .panel .btn { width: 100%; }
+  .ticks { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 0; }
+  .ticks li { padding: 12px 0 12px 32px; border-top: 1px solid var(--line); position: relative; font-size: 16px; line-height: 1.45; color: var(--mute); }
+  .ticks li b { color: var(--ink); }
+  .ticks li::before { content: ""; position: absolute; left: 4px; top: 19px; width: 13px; height: 7px; border-left: 3px solid var(--orange); border-bottom: 3px solid var(--orange); transform: rotate(-45deg); }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+  .chips span { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font-weight: 700; color: var(--ink); font-size: 15px; }
+  .brands { margin-top: 22px; color: var(--mute); font-size: 16px; } .brands b { color: var(--ink); }
+  .branches { display: grid; gap: 16px; margin-top: 22px; }
+  .branch h3 { font-size: 34px; line-height: 1; color: var(--wood); } .branch .role { color: var(--mute); font-size: 16px; margin: 6px 0 14px; }
+  .branch dl { margin: 0 0 18px; display: grid; gap: 10px; } .branch dt { font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--red); } .branch dd { margin: 0; font-weight: 600; }
+  .branch .cta { margin-top: 0; }
+  .story { color: var(--mute); } .story p + p { margin-top: 12px; } .story b { color: var(--ink); }
+  .last { background: var(--red); color: #fff; }
+  .last h2 { color: #fff; } .last p { color: #ffe1e3; max-width: 46ch; } .last .cta .btn { width: 100%; }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.35fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; max-width: 1180px; margin-inline: auto; } .hero .shot { height: 440px; order: 2; } .hero .wrap { width: auto; padding: 60px 40px; }
+    .cta { grid-auto-flow: column; justify-content: start; } .proof .wrap { grid-template-columns: repeat(4, 1fr); } .proof .wrap > div { padding: 26px 20px 26px 0 !important; border-top: 0 !important; border-left: 0 !important; }
+    section { padding: 84px 0; } .two, .branches { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; } .panel > img { height: 260px; } .panel .btn { width: auto; }
+    .last .cta .btn { width: auto; } .branch .cta { grid-auto-flow: row; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Rahims. This is not the official website.</span>
+  <a href="http://www.rahims.net/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Rahims"><img src="img/logo.png" alt="Rahims" width="224" height="52"></a>
+  <nav class="links" aria-label="Sections"><a href="#trade">Trade</a><a href="#retail">Retail</a><a href="#departments">Products</a><a href="#branches">Branches</a></nav>
+  <a class="btn red small" href="tel:+442035222853">Trade desk</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="shot" src="img/atlas-wharf.jpg" alt="The Rahims branch at Atlas Wharf, Hackney" width="375" height="250">
+  <div class="wrap">
+    <p class="kicker">UK's largest Bangladeshi owned cash and carry</p>
+    <h1 class="cond">Everything you need, all under one roof.</h1>
+    <p class="lead">Dedicated retail and wholesale departments in Hackney and Mile End, with great trade prices.</p>
+    <div class="cta">
+      <a class="btn red stack" href="tel:+442035222853">Open a trade account<small>Call the trade desk on 020 3522 2853</small></a>
+      <a class="btn line" href="#branches">Branches and opening hours</a>
+    </div>
+  </div>
+</div>
+
+<div class="proof"><div class="wrap">
+  <div><b class="cond">Since the 80s</b><span>Open to the public in East London</span></div>
+  <div><b class="cond">The first</b><span>Bangladeshi owned cash and carry in the UK</span></div>
+  <div><b class="cond">27,000 sq ft</b><span>Hackney site with cold store and butchery</span></div>
+  <div><b class="cond">100+</b><span>Free parking spaces at Atlas Wharf</span></div>
+</div></div>
+
+<section id="trade"><div class="wrap">
+  <div class="two">
+    <div class="panel">
+      <img src="img/trade.jpg" alt="Stock on the racking in the Rahims trade department" width="400" height="266">
+      <div class="in">
+        <p class="eyebrow">Trade</p>
+        <h2 class="cond">Supplying caterers and retailers across the UK.</h2>
+        <p class="sub">Carefully monitored local deliveries and daily import of quality international stock mean your customers consistently enjoy high quality end products.</p>
+        <ol class="how">
+          <li><span><b>Call the trade desk</b>We'll get your account up and running in no time.</span></li>
+          <li><span><b>Choose your items</b>Make your provisional order from our products list.</span></li>
+          <li><span><b>We call you back</b>A member of staff confirms your order and processes your payment.</span></li>
+        </ol>
+        <a class="btn red" href="tel:+442035222853">Open a trade account</a>
+      </div>
+    </div>
+
+    <div class="panel" id="retail" style="margin-top:16px">
+      <img src="img/retail.jpg" alt="Shelves in a Rahims store" width="300" height="200">
+      <div class="in">
+        <p class="eyebrow">Retail</p>
+        <h2 class="cond">All your home shopping, in one place, at great low prices.</h2>
+        <ul class="ticks">
+          <li><b>Halal butchers</b>, serving fresh meat, chicken and fish</li>
+          <li><b>Fresh fruit and veg</b>, sourced daily, both local and international</li>
+          <li><b>Herbs and spices</b>, from traditional household brands to our own 'direct from source' selections</li>
+          <li><b>Frozen products</b>, a comprehensive range</li>
+          <li><b>Pickles and pastes</b>, to make your rival chef envy your cooking</li>
+          <li><b>General household goods</b>, including packaging and cleaning products</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="departments" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Departments</p>
+  <h2 class="cond">A wide range, and plenty of stock.</h2>
+  <p class="sub">Our meat, fruit and veg, and products with short shelf lives will always be fresh and up to our high standards.</p>
+  <div class="chips">
+    <span>Rice</span><span>Flour</span><span>Spice</span><span>Oil and ghee</span><span>Fresh meat and chicken</span><span>Frozen meat and chicken</span><span>Fish</span><span>Prawn</span><span>Fruit</span><span>Vegetables</span><span>Dairy</span><span>Bakery</span><span>Dry goods</span><span>Tin foods</span><span>Pickle</span><span>Paste</span><span>Sauce</span><span>Papadom</span><span>Drinks</span><span>Household</span>
+  </div>
+  <p class="brands"><b>A few of the suppliers we work with:</b> Tilda, Natco Foods, TRS Wholesale, East End Foods, KTC (Edibles), Veetee Rice, Surya Foods, Westmill Foods, Dairy Crest.</p>
+</div></section>
+
+<section id="branches" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Branches</p>
+  <h2 class="cond">Two branches in East London.</h2>
+  <div class="branches">
+    <div class="panel branch">
+      <img src="img/atlas-wharf.jpg" alt="Rahims, Atlas Wharf, Hackney" width="375" height="250">
+      <div class="in">
+        <h3 class="cond">Hackney</h3>
+        <p class="role">Head office, with a retail outlet and a trade supplies department.</p>
+        <dl>
+          <div><dt>Address</dt><dd>Atlas Wharf, Berkshire Road, London E9 5NB</dd></div>
+          <div><dt>Opening hours</dt><dd>Monday to Saturday, 9am to 8pm<br>Sunday, 10am to 6pm</dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn wood" href="tel:+442035222851">Retail: 020 3522 2851</a>
+          <a class="btn line" href="tel:+442035222853">Trade: 020 3522 2853</a>
+          <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Atlas+Wharf+Berkshire+Road+London+E9+5NB" rel="nofollow noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
+    <div class="panel branch">
+      <img src="img/mile-end.jpg" alt="The Rahims shop front on Mile End Road" width="375" height="250">
+      <div class="in">
+        <h3 class="cond">Mile End</h3>
+        <p class="role">Our key retail store, also providing all food service sales.</p>
+        <dl>
+          <div><dt>Address</dt><dd>216-218 Mile End Road, London E1 4LJ</dd></div>
+          <div><dt>Opening hours</dt><dd>7 days a week, 9 to 9</dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn wood" href="tel:+442077906220">Call 020 7790 6220</a>
+          <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=216+Mile+End+Road+London+E1+4LJ" rel="nofollow noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap story">
+  <p class="eyebrow">Our story</p>
+  <h2 class="cond">Three generations of Rahims.</h2>
+  <p>Longing for the food we left behind, our journey to find routes to import these products started, and before long we opened our doors to the public in the 80s. <b>Our first store was launched in East London, at the heart of the Bangladeshi community.</b></p>
+  <p>We became the UK's first Bangladeshi owned cash and carry, supplying caterers around the country, and now across Europe. Today a third generation is amongst us: a generation of new ideas.</p>
+</div></section>
+
+<section class="last"><div class="wrap">
+  <h2 class="cond">Become a trade customer.</h2>
+  <p>Simply call us, and we'll get your account up and running in no time. Everything you need, all under one roof, with great trade prices.</p>
+  <div class="cta">
+    <a class="btn white" href="tel:+442035222853">Call the trade desk: 020 3522 2853</a>
+    <a class="btn ghost" href="tel:+442089853335">General enquiries: 020 8985 3335</a>
+    <a class="btn ghost" href="mailto:info@rahims.net?subject=Enquiry%20from%20the%20website">Email info@rahims.net</a>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Rahims website could look and work on a phone. The wording, logo and photographs come from rahims.net.</p>
+  <p>It is not the official Rahims website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="#branches">Branches</a>
+  <a class="btn red" href="tel:+442035222853">Open trade account</a>
+</div>
+
+</body>
+</html>

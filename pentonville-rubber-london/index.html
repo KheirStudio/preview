@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2a005a">
+<title>Pentonville Rubber · foam and rubber supplier · design concept</title>
+<meta name="description" content="A design concept by K Studio for Pentonville Rubber, London. Not the official website.">
+<style>
+  :root {
+    --night: #2a005a; --violet: #4a1a9a; --volt: #1f7bff; --volt-2: #a9c8ff; --ink: #1c0540; --mute: #5d5873;
+    --line: #e2def0; --paper: #f7f5fc; --white: #fff; --lime: #ffffcc; --lime-ink: #2a005a; --r: 20px;
+    --shadow: 0 12px 34px rgba(42, 0, 90, .12);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; }
+  h1, h2, h3, p, ul { margin: 0; }
+  h1, h2 { text-wrap: balance; }
+  .wrap { width: min(100% - 40px, 1080px); margin-inline: auto; }
+  svg { display: block; }
+
+  .concept { background: #0e0b17; color: #d9d6e6; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: var(--lime); white-space: nowrap; display: inline-block; padding: 10px 0; }
+
+  header.top { position: sticky; top: 0; z-index: 20; background: rgba(42, 0, 90, .97); backdrop-filter: blur(10px); color: #fff; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: block; padding: 10px 0; } .brand img { display: block; height: 40px; width: auto; }
+  nav.links { display: none; gap: 26px; font-size: 15px; font-weight: 600; color: #cfc8ee; }
+  nav.links a { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 22px; border-radius: 999px; font-weight: 800; font-size: 17px; text-decoration: none; border: 0; }
+  .btn.lime { background: var(--lime); color: var(--lime-ink); }
+  .btn.ghost { background: rgba(255, 255, 255, .10); color: #fff; border: 1.5px solid rgba(255, 255, 255, .4); }
+  .btn.dark { background: var(--night); color: #fff; }
+  .btn.line { background: #fff; color: var(--night); border: 1.5px solid var(--line); }
+  .btn.small { min-height: 44px; padding: 0 18px; font-size: 15px; }
+
+  .hero { background: var(--night); color: #fff; position: relative; overflow: hidden; }
+  .hero::before, .hero::after { content: ""; position: absolute; border-radius: 50%; filter: blur(34px); opacity: .85; }
+  .hero::before { width: 300px; height: 300px; right: -90px; top: -60px; background: radial-gradient(circle, #5b86ff 0%, rgba(91, 134, 255, 0) 70%); }
+  .hero::after { width: 260px; height: 260px; left: -110px; bottom: -110px; background: radial-gradient(circle, #8a3dff 0%, rgba(138, 61, 255, 0) 70%); }
+  .hero .wrap { position: relative; z-index: 1; padding: 34px 0 40px; }
+  .kicker { font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--volt-2); }
+  .hero h1 { font-size: clamp(44px, 12.4vw, 84px); line-height: .98; letter-spacing: -.04em; font-weight: 800; margin: 16px 0 18px; }
+  .hero h1 span { color: var(--lime); }
+  .hero p.lead { font-size: 19px; line-height: 1.5; color: #d9d2f5; max-width: 36ch; }
+  .cta { display: grid; gap: 12px; margin-top: 28px; }
+  .orbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 24px; }
+  .orbs a { aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; text-decoration: none; color: #06124f; font-size: 11.500px; font-weight: 700; letter-spacing: -.02em; background: radial-gradient(circle, #2f8bff 0 50%, rgba(47, 139, 255, .5) 51% 60%, rgba(47, 139, 255, 0) 71%); }
+  .any { margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--volt-2); }
+
+  section { padding: 54px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--violet); }
+  h2 { font-size: clamp(31px, 7.600vw, 48px); line-height: 1.06; letter-spacing: -.03em; font-weight: 800; margin: 10px 0 12px; color: var(--night); }
+  .sub { color: var(--mute); max-width: 54ch; }
+
+  .who { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 24px; }
+  .who div { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; font-weight: 700; color: var(--night); font-size: 16px; display: flex; gap: 10px; align-items: center; }
+  .who i { width: 10px; height: 10px; border-radius: 50%; background: var(--volt); flex: none; }
+
+  .range { margin-top: 26px; display: grid; gap: 12px; }
+  details { background: #fff; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+  details[open] { box-shadow: var(--shadow); }
+  summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 52px 1fr 24px; gap: 14px; align-items: center; padding: 18px; min-height: 84px; }
+  summary::-webkit-details-marker { display: none; }
+  summary .sw { width: 52px; height: 52px; border-radius: 16px; }
+  summary b { display: block; font-size: 21px; letter-spacing: -.01em; color: var(--night); line-height: 1.2; }
+  summary small { color: var(--mute); font-size: 15px; }
+  summary .chev { transition: transform .2s; }
+  details[open] summary .chev { transform: rotate(180deg); }
+  .items { padding: 0 18px 18px; display: grid; gap: 14px; }
+  .item { border-top: 1px solid var(--line); padding-top: 14px; }
+  .item h3 { font-size: 18px; color: var(--night); margin-bottom: 2px; }
+  .item p { color: var(--mute); font-size: 16px; line-height: 1.5; }
+  .dots { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+  .dots i { width: 26px; height: 26px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, .12); }
+
+  .steps { counter-reset: n; display: grid; gap: 12px; margin-top: 24px; }
+  .step { counter-increment: n; background: var(--night); color: #fff; border-radius: var(--r); padding: 22px; position: relative; }
+  .step::before { content: counter(n); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--lime); color: var(--lime-ink); font-weight: 800; margin-bottom: 14px; }
+  .step h3 { font-size: 20px; margin-bottom: 4px; }
+  .step p { color: #cfc8ee; font-size: 16px; }
+
+  .visit { background: #fff; border: 1px solid var(--line); border-radius: 26px; padding: 28px 22px; box-shadow: var(--shadow); }
+  .visit .cta .btn { width: 100%; }
+  address { font-style: normal; margin-top: 22px; color: var(--mute); line-height: 1.7; }
+  address b { color: var(--night); }
+
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); }
+  footer p + p { margin-top: 8px; }
+  footer a { display: inline-block; padding: 6px 0; }
+
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .96); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; }
+    .bar { display: none; }
+    nav.links { display: flex; }
+    .hero .wrap { padding: 92px 0 96px; }
+    .hero p.lead { font-size: 22px; max-width: 44ch; }
+    .cta { grid-auto-flow: column; justify-content: start; }
+    section { padding: 88px 0; }
+    .who { grid-template-columns: repeat(4, 1fr); }
+    .range { grid-template-columns: 1fr 1fr; align-items: start; gap: 16px; }
+    .steps { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .visit { padding: 48px 56px; }
+    .visit .cta .btn { width: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } summary .chev { transition: none; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Pentonville Rubber. This is not the official website.</span>
+  <a href="http://www.pentonvillerubber.co.uk/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Pentonville Rubber"><img src="img/logo.png" alt="Pentonville Rubber" width="314" height="77"></a>
+  <nav class="links" aria-label="Sections">
+    <a href="#range">Products</a><a href="#order">How to order</a><a href="#visit">Find us</a>
+  </nav>
+  <a class="btn lime small" href="tel:+442078377553">Call</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero"><div class="wrap">
+  <p class="kicker">The foam and rubber supplier · London N1</p>
+  <h1>Foam and rubber, <span>cut to size.</span></h1>
+  <p class="lead">Upholstery foam, rubber sheeting, latex and matting from our shop on Pentonville Road. Any quantity, any size, cut to suit you.</p>
+  <div class="cta">
+    <a class="btn lime" href="tel:+442078377553">Call 020 7837 7553</a>
+    <a class="btn ghost" href="mailto:queries@pentonvillerubber.co.uk?subject=Enquiry%20from%20the%20website">Email your measurements</a>
+  </div>
+  <div class="orbs" aria-label="Our four ranges"><a href="#foam">foam</a><a href="#rubber">rubber</a><a href="#latex">latex</a><a href="#furnishings">furnishings</a></div>
+  <p class="any">Any quantity · Any size · Ex-stock or to order</p>
+</div></div>
+
+<section><div class="wrap">
+  <p class="eyebrow">Who we supply</p>
+  <h2>From film sets to the sofa at home.</h2>
+  <p class="sub">We supply throughout the UK, and the home customer matters to us as much as the studio or the hospital.</p>
+  <div class="who">
+    <div><i></i>Film studios</div><div><i></i>TV</div><div><i></i>Theatre</div><div><i></i>Museums</div>
+    <div><i></i>Hospitals</div><div><i></i>Health authorities</div><div><i></i>Local government</div><div><i></i>Homes</div>
+  </div>
+</div></section>
+
+<section id="range" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Our range</p>
+  <h2>Four ranges. Tap one to open it.</h2>
+  <div class="range">
+
+    <details id="foam" open>
+      <summary><span class="sw" style="background:linear-gradient(135deg,#ffe9a8,#f5b94a)"></span><span><b>Foam</b><small>Upholstery, packaging, acoustic and more</small></span><svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c0a4a" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div class="items">
+        <div class="item"><h3>Furniture and upholstery foam</h3><p>Cut to size or shape. Ideal for furniture in the home, garden, boat or caravan.</p></div>
+        <div class="item"><h3>Packaging foam</h3><p>Used in film and theatre for props and costumes, and for packing delicate electronic equipment.</p></div>
+        <div class="item"><h3>Reticulated foam</h3><p>Open-cell foam, mainly in beige or black, for air and pond filtering. Its high tear strength suits puppet and costume making. Sheets 200cm x 75cm and 200cm x 62cm, from 6mm thick.</p></div>
+        <div class="item"><h3>Polyethylene foam (Plastazote)</h3><p>Flexible closed-cell foam for props, costumes and packaging. FR and non-FR, in 2m x 1m sheets.</p><div class="dots" aria-label="Colours: black, white, red, yellow, green, orange and pink"><i style="background:#111"></i><i style="background:#fff"></i><i style="background:#e02424"></i><i style="background:#ffd60a"></i><i style="background:#22a447"></i><i style="background:#ff8a1f"></i><i style="background:#ff7eb6"></i></div></div>
+        <div class="item"><h3>Acoustic egg-box foam</h3><p>For sound proofing and packaging.</p></div>
+        <div class="item"><h3>Chip foam</h3><p>Reconstituted polyurethane in various densities, for packaging, upholstery and costume making.</p></div>
+        <div class="item"><h3>Foam strip and cord</h3><p>For upholstery and costume making.</p></div>
+        <div class="item"><h3>Latex sheeting</h3><p>A high-quality natural material for seating and mattresses, cut to your own requirements.</p></div>
+      </div>
+    </details>
+
+    <details id="rubber">
+      <summary><span class="sw" style="background:linear-gradient(135deg,#3b3b46,#0f0f14)"></span><span><b>Rubber</b><small>Sheeting, matting, tiles, cord and tubing</small></span><svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c0a4a" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div class="items">
+        <div class="item"><h3>Rubber sheeting</h3><p>Expanded neoprene, EPDM and nitrile PVC, solid natural and synthetic rubbers, reinforced, food-grade, anti-static and silicone sponge. Plain or self-adhesive backed.</p></div>
+        <div class="item"><h3>Rubber matting</h3><p>Fine, flat and broad fluted in black, grey and white. Widths 914mm, 1000mm and 1200mm; 3mm to 12mm thick. Electrical matting to BS921.</p></div>
+        <div class="item"><h3>Rubber tiles and rolls</h3><p>A variety of colours. Tiles 50cm square, rolls 10m x 1m.</p></div>
+        <div class="item"><h3>Rubber and neoprene cord and strip</h3><p>Solid and sponge cord in a variety of sizes, plain or self-adhesive backed.</p></div>
+        <div class="item"><h3>Self-adhesive rubber strip</h3><p>Neoprene or EPDM strip in a variety of widths and thicknesses.</p></div>
+        <div class="item"><h3>Rubber and PVC tubing</h3><p>Plastic tubing and hosing in all sizes.</p></div>
+        <div class="item"><h3>Stair nosing</h3><p>Call or email for sizes.</p></div>
+      </div>
+    </details>
+
+    <details id="latex">
+      <summary><span class="sw" style="background:conic-gradient(#e02424,#ff8a1f,#ffd60a,#22a447,#2b6fff,#8a3dff,#ff5fa8,#e02424)"></span><span><b>Coloured latex</b><small>Three ranges, from 0.16mm thick</small></span><svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c0a4a" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div class="items">
+        <div class="item"><h3>Supatex</h3><p>0.16mm to 1.05mm thick.</p><div class="dots" aria-label="Seventeen colours"><i style="background:#111"></i><i style="background:#ff8a1f"></i><i style="background:#ff7eb6"></i><i style="background:#ffd1e3"></i><i style="background:#fff"></i><i style="background:#ffd60a"></i><i style="background:#8a3dff"></i><i style="background:#eadfc8"></i><i style="background:#8ecbff"></i><i style="background:#6d1f4f"></i><i style="background:#d81e1e"></i><i style="background:#b98a5e"></i><i style="background:#1f3fbf"></i><i style="background:#ff2a1a"></i><i style="background:#1f6b3a"></i><i style="background:#1fa37a"></i><i style="background:#4a2c1a"></i></div></div>
+        <div class="item"><h3>Vibrant</h3><p>0.20mm, 0.33mm and 0.45mm.</p><div class="dots" aria-label="Nine colours"><i style="background:#e02424"></i><i style="background:#fff35c"></i><i style="background:#ffd60a"></i><i style="background:#e0218a"></i><i style="background:#ff8a1f"></i><i style="background:#9be81f"></i><i style="background:#ff4fa3"></i><i style="background:#22a447"></i><i style="background:#1fc8c8"></i></div></div>
+        <div class="item"><h3>Pearlsheen</h3><p>0.33mm and 0.45mm.</p><div class="dots" aria-label="Eight colours"><i style="background:#d4af37"></i><i style="background:#c9ccd1"></i><i style="background:#8d9196"></i><i style="background:#b0763a"></i><i style="background:#c62828"></i><i style="background:#1f9d6b"></i><i style="background:#2b6fff"></i><i style="background:#7a3fc4"></i></div></div>
+        <div class="item"><p>Standard width 92cm. Minimum order one metre. Call to check which colours are available in 2m widths.</p></div>
+      </div>
+    </details>
+
+    <details id="furnishings">
+      <summary><span class="sw" style="background:linear-gradient(135deg,#bcd0ff,#6f93ff)"></span><span><b>Furnishings</b><small>Mattresses, box beds, bolsters, bean bags</small></span><svg class="chev" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1c0a4a" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div class="items">
+        <div class="item"><h3>Mattresses</h3><p>Standard and bespoke sizes in foam, memory foam or latex. Call or email your details.</p></div>
+        <div class="item"><h3>Box beds</h3><p>Call or email for sizes.</p></div>
+        <div class="item"><h3>Bolsters and wedges</h3><p>Call or email for sizes.</p></div>
+        <div class="item"><h3>Bean bags and refills</h3><p>Call or email for details.</p></div>
+      </div>
+    </details>
+
+  </div>
+</div></section>
+
+<section id="order" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">How to order</p>
+  <h2>Three steps to the right piece.</h2>
+  <div class="steps">
+    <div class="step"><h3>Measure up</h3><p>Length, width and thickness, and what it is for.</p></div>
+    <div class="step"><h3>Call or email us</h3><p>We will tell you what suits the job and what it costs.</p></div>
+    <div class="step"><h3>We cut it for you</h3><p>To size or to shape, whatever the quantity.</p></div>
+  </div>
+</div></section>
+
+<section id="visit" style="padding-top:0"><div class="wrap">
+  <div class="visit">
+    <p class="eyebrow">Find us</p>
+    <h2>104/106 Pentonville Road.</h2>
+    <p class="sub">Our priority is a personal service at the most competitive prices. Call in, ring, or email.</p>
+    <div class="cta">
+      <a class="btn dark" href="tel:+442078377553">Call 020 7837 7553</a>
+      <a class="btn line" href="tel:+442078374582">Or 020 7837 4582</a>
+      <a class="btn line" href="mailto:queries@pentonvillerubber.co.uk?subject=Enquiry%20from%20the%20website">Email us</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&query=104+Pentonville+Road+London+N1+9JB" rel="nofollow noopener">Get directions</a>
+    </div>
+    <address><b>Pentonville Rubber</b><br>104/106 Pentonville Road, London N1 9JB<br>queries@pentonvillerubber.co.uk · Fax 020 7278 7392</address>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Pentonville Rubber website could look and work on a phone. The product wording and logo come from pentonvillerubber.co.uk.</p>
+  <p>It is not the official Pentonville Rubber website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="mailto:queries@pentonvillerubber.co.uk?subject=Enquiry%20from%20the%20website">Email sizes</a>
+  <a class="btn dark" href="tel:+442078377553">Call the shop</a>
+</div>
+
+<script>addEventListener('hashchange',function(){var d=document.getElementById(location.hash.slice(1));if(d&&d.tagName==='DETAILS'){d.open=true;d.scrollIntoView()}});</script>
+</body>
+</html>
