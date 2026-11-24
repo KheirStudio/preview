@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Satay House · Malaysian restaurant, Paddington · design concept</title>
+<meta name="description" content="A design concept by K Studio for Satay House, Paddington. Not the official website.">
+<style>
+  :root { --crimson: #ab003f; --crimson-2: #8a0033; --plum: #41001c; --night: #1c070f; --cream: #ece9dd; --paper: #f7f5ee; --gold: #978e4c; --gold-2: #c9bf7a; --ink: #323226; --mute: #66634f; --line: #d9d5c3; --r: 6px; --serif: Georgia, "Times New Roman", Times, serif; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 var(--serif); color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol { margin: 0; } h1, h2 { text-wrap: balance; } img, svg { display: block; max-width: 100%; }
+  .wrap { width: min(100% - 40px, 1040px); margin-inline: auto; }
+  .concept { background: var(--night); color: #e3d9dc; font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: var(--gold-2); white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: linear-gradient(180deg, #fefefe 30%, #f3f2ea 88%); border-bottom: 3px solid var(--crimson); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: block; padding: 6px 0; } .brand img { height: 46px; width: auto; }
+  nav.links { display: none; gap: 26px; font-size: 16px; font-style: italic; color: var(--plum); } nav.links a { text-decoration: none; padding: 10px 0; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border-radius: var(--r); font: 700 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; text-decoration: none; text-align: center; }
+  .btn.red { background: var(--crimson); color: #fff; } .btn.cream { background: var(--cream); color: var(--plum); } .btn.line { background: #fff; color: var(--crimson-2); border: 1.5px solid var(--crimson); } .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .6); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .btn.stack { flex-direction: column; gap: 2px; padding: 9px 22px; min-height: 60px; } .btn.stack small { font-weight: 500; font-size: 14px; opacity: .92; }
+  .hero { background: var(--plum); color: #fff; }
+  .hero .shot { width: 100%; height: 178px; object-fit: cover; object-position: 60% 40%; }
+  .hero .wrap { padding: 18px 0 30px; }
+  .kicker { font: 800 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-2); }
+  .hero h1 { font-size: clamp(33px, 9vw, 64px); line-height: 1.08; font-weight: 400; margin: 8px 0 12px; }
+  .hero h1 em { font-style: italic; color: var(--gold-2); }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: #f1e4e8; max-width: 40ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--crimson); color: #fff; }
+  .proof .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .proof .wrap > div { padding: 16px 12px 16px 0; } .proof .wrap > div:nth-child(even) { padding-left: 16px; border-left: 1px solid rgba(255, 255, 255, .28); } .proof .wrap > div:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, .28); }
+  .proof b { display: block; font-size: 23px; font-weight: 400; font-style: italic; line-height: 1.1; } .proof span { display: block; font: 14px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: #ffe3ec; margin-top: 5px; }
+  section { padding: 50px 0; }
+  .eyebrow { font: 800 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+  h2 { font-size: clamp(30px, 8vw, 48px); line-height: 1.1; font-weight: 400; color: var(--plum); margin: 8px 0 12px; } h2 em { color: var(--crimson); }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .menu { margin-top: 22px; display: grid; gap: 22px; }
+  .menu h3 { font-size: 15px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--crimson); padding-bottom: 8px; border-bottom: 2px solid var(--crimson); }
+  .dish { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .dish b { font-size: 18px; font-weight: 700; color: var(--plum); line-height: 1.25; } .dish i { font-style: normal; font-weight: 700; font-size: 18px; color: var(--crimson); font-variant-numeric: tabular-nums; }
+  .dish span { grid-column: 1 / -1; font-size: 15.5px; line-height: 1.45; color: var(--mute); }
+  .menu-note { font-size: 15px; color: var(--mute); margin-top: 14px; }
+  .sets { background: var(--plum); color: #fff; border-radius: 14px; padding: 24px 20px; margin-top: 30px; }
+  .sets h3 { font-size: 25px; font-weight: 400; font-style: italic; color: var(--gold-2); } .sets > p { color: #f1e4e8; font-size: 16px; margin-top: 6px; }
+  .set { padding: 14px 0; border-top: 1px solid rgba(255, 255, 255, .22); margin-top: 14px; } .set + .set { margin-top: 0; }
+  .set b { display: flex; justify-content: space-between; gap: 12px; font-size: 19px; font-weight: 700; } .set b i { font-style: normal; color: var(--gold-2); white-space: nowrap; } .set span { display: block; font-size: 15px; line-height: 1.5; color: #e9d9de; margin-top: 4px; }
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 22px; }
+  .photos img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; } .photos img:first-child { grid-column: 1 / -1; height: 210px; }
+  .dark { background: var(--night); color: #fff; }
+  .dark h2 { color: #fff; } .dark h2 em { color: var(--gold-2); } .dark .sub { color: #e3d9dc; } .dark .cta .btn { width: 100%; }
+  .ticks { list-style: none; padding: 0; margin: 18px 0 0; }
+  .ticks li { position: relative; padding: 12px 0 12px 28px; border-top: 1px solid rgba(255, 255, 255, .2); font-size: 16px; line-height: 1.45; } .ticks li:first-child { border-top: 0; }
+  .ticks li::before { content: ""; position: absolute; left: 3px; top: 19px; width: 9px; height: 9px; background: var(--crimson); transform: rotate(45deg); }
+  .story p { max-width: 60ch; color: var(--mute); } .story p + p { margin-top: 12px; } .story p.big { font-size: 20px; line-height: 1.5; color: var(--ink); font-style: italic; }
+  .find { display: grid; gap: 0; margin-top: 18px; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 4px 18px; }
+  .find div { padding: 14px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.5; color: var(--mute); } .find div:first-child { border-top: 0; } .find b { display: block; color: var(--plum); font-size: 17px; }
+  .last { background: var(--crimson); color: #fff; }
+  .last h2 { color: #fff; } .last p { color: #ffe3ec; max-width: 46ch; } .last .cta .btn { width: 100%; }
+  footer { padding: 30px 0 40px; font: 14px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.7fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; } .hero .shot { height: 100%; min-height: 520px; order: 2; } .hero .wrap { width: auto; padding: 70px 50px 80px max(20px, calc((100vw - 1040px) / 2)); align-self: center; }
+    .hero p.lead { font-size: 21px; } .cta { grid-auto-flow: column; justify-content: start; }
+    .proof .wrap { grid-template-columns: repeat(4, 1fr); } .proof .wrap > div { border-top: 0 !important; border-left: 0 !important; padding: 24px 20px 24px 0 !important; }
+    section { padding: 84px 0; } .menu { grid-template-columns: 1fr 1fr; gap: 40px; } .sets { padding: 40px; }
+    .photos { grid-template-columns: 2fr 1fr 1fr; } .photos img, .photos img:first-child { grid-column: auto; height: 300px; }
+    .dark .cta .btn, .last .cta .btn { width: auto; } .find { max-width: 760px; padding: 6px 26px; } .ticks { max-width: 760px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Satay House. This is not the official website.</span>
+  <a href="https://www.satayhouse.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Satay House Malaysian restaurant"><img src="img/logo.png" alt="Satay House Malaysian restaurant" width="211" height="62"></a>
+  <nav class="links" aria-label="Sections"><a href="#menu">Menu</a><a href="#functions">Private functions</a><a href="#story">History</a><a href="#find">How to find us</a></nav>
+  <a class="btn red small" href="http://www.opentable.com/single.aspx?rid=7260&restref=7260&ref=10792" rel="nofollow noopener">Reserve</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="shot" src="img/front.jpg" alt="Satay House on Sale Place, Paddington, at night" width="578" height="368">
+  <div class="wrap">
+    <p class="kicker">Est. 1973 · All food served is Halal</p>
+    <h1>Traditional, authentic Malaysian cuisine <em>since 1973.</em></h1>
+    <p class="lead">A family-owned restaurant in Paddington, creating exceptionally fresh and flavourful dishes for over 50 years.</p>
+    <div class="cta">
+      <a class="btn red stack" href="http://www.opentable.com/single.aspx?rid=7260&restref=7260&ref=10792" rel="nofollow noopener">Reserve your table<small>Online booking for parties of up to six</small></a>
+      <a class="btn ghost" href="tel:+442077236763">Call +44 20 7723 6763</a>
+    </div>
+  </div>
+</div>
+
+<div class="proof"><div class="wrap">
+  <div><b>Since 1973</b><span>Family-owned and proudly independent for over fifty years</span></div>
+  <div><b>Halal</b><span>All food served is Halal</span></div>
+  <div><b>Open 7 days</b><span>12:00 to 22:00, and to 22:30 on Friday and Saturday</span></div>
+  <div><b>Paddington</b><span>13 Sale Place, just off Praed Street</span></div>
+</div></div>
+
+<section id="menu"><div class="wrap">
+  <p class="eyebrow">Food · makanan</p>
+  <h2>Makan sama-sama: <em>sharing dishes together.</em></h2>
+  <p class="sub">There is no right or wrong way to eat Malaysian food. We recommend 1 to 2 dishes per person with sides, or 2 to 4 dishes with sides when dining sharing-style between two guests.</p>
+  <div class="menu">
+    <div>
+      <h3>Small sharing plates to start</h3>
+      <div class="dish"><b>Chicken satay, 3 skewers</b><i>8.5</i><span>Aromatic char-grilled skewers with peanut sauce, cucumber, onion, and rice cubes</span></div>
+      <div class="dish"><b>Beef satay, 3 skewers</b><i>9.9</i></div>
+      <div class="dish"><b>Prawn satay, 3 skewers</b><i>10.5</i></div>
+      <div class="dish"><b>Ayam Bawang Putih</b><i>12.5</i><span>Crispy chicken wings tossed with garlic and chillies</span></div>
+      <div class="dish"><b>Gado Gado (v)</b><i>11.5</i><span>Traditional Malaysian-style vegetable salad with tofu, rice cubes, egg, and rich peanut sauce</span></div>
+    </div>
+    <div>
+      <h3>Main sharing plates</h3>
+      <div class="dish"><b>Rendang</b><i>18.5</i><span>Four-hour slow braised beef in coconut, lemongrass, galangal, and aromatic spices</span></div>
+      <div class="dish"><b>Ayam Percik</b><i>16.5</i><span>Char-grilled chicken glazed with sweet coconut and lemongrass sauce</span></div>
+      <div class="dish"><b>Nasi Lemak</b><i>18.5</i><span>Coconut rice served with sambal prawns, cucumber, peanuts, crispy anchovies, and boiled egg</span></div>
+      <div class="dish"><b>Kari Laksa</b><i>18.5</i><span>Rich coconut curry noodle soup with prawn, chicken, tofu, egg and vegetables</span></div>
+      <div class="dish"><b>Roti Canai (v)</b><i>9.5</i><span>House-made traditional bread, served with a choice of dalca (v), fish curry sauce or chicken curry sauce</span></div>
+    </div>
+  </div>
+  <p class="menu-note">Prices include VAT. Service not included. From the Satay House menu, April 2026.</p>
+  <div class="cta"><a class="btn line" href="https://www.satayhouse.com/pdf/satay-house-menu.pdf" rel="nofollow">View our full menu (PDF)</a></div>
+
+  <div class="sets">
+    <h3>Hidangan Makan Sama-Sama Experience</h3>
+    <p>Set menus served the traditional Malaysian way, with a generous selection of dishes for the whole table to enjoy family-style. Minimum 3 persons per menu.</p>
+    <div class="set"><b>The Raja <i>45 pp</i></b><span>Keropok, Satay, Nasi Putih, Kari Kambing, Ayam Percik, Sambal Tumis Udang, Rendang, Sayur Campur, Dessert</span></div>
+    <div class="set"><b>The Bangsawan <i>40 pp</i></b><span>Keropok, Ayam Bawang Putih, Nasi Putih, Kari Ikan, Ayam Merah, Rendang, Sawi, Dessert</span></div>
+    <div class="set"><b>The Menteri <i>35 pp</i></b><span>Tahu Sumbat, Taugeh Goreng, Pajeri Terung, Sayur Campur, Telur Dadar, Nasi Goreng Sayur, Dessert</span></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">The restaurant</p>
+  <h2>A relaxed, cosy and warm environment.</h2>
+  <p class="sub">To help with the experience of the food, we have created a relaxed cosy and warm environment that is fully licensed.</p>
+  <div class="photos">
+    <img src="img/interior-1.jpg" alt="The dining room at Satay House" width="578" height="368">
+    <img src="img/interior-2.jpg" alt="Tables at Satay House" width="558" height="368">
+    <img src="img/interior-3.jpg" alt="A table by the red wall" width="549" height="368">
+  </div>
+</div></section>
+
+<section class="dark" id="functions"><div class="wrap">
+  <p class="eyebrow">Private functions</p>
+  <h2>Our lower ground floor, <em>for approximately 35 to 40 guests.</em></h2>
+  <p class="sub">Available for private functions, birthday celebrations, and intimate receptions.</p>
+  <ul class="ticks">
+    <li>Group sharing menus, and bespoke menu options</li>
+    <li>Celebration cakes and other special arrangements</li>
+    <li>A plasma screen is also available for presentations and events</li>
+    <li>For bookings larger than six, contact us by telephone, WhatsApp or email</li>
+  </ul>
+  <div class="cta">
+    <a class="btn cream" href="https://wa.me/+442077236763" rel="nofollow noopener">Message us on WhatsApp</a>
+    <a class="btn ghost" href="mailto:info@satay-house.co.uk?subject=Private%20hire%20enquiry">Email info@satay-house.co.uk</a>
+  </div>
+</div></section>
+
+<section class="story" id="story"><div class="wrap">
+  <p class="eyebrow">History</p>
+  <h2>One of London's first authentic Malaysian restaurants.</h2>
+  <p class="big">Satay House was established in 1973 with a vision to bring the distinctive flavours and warm hospitality of Malaysia to the bustling streets of London.</p>
+  <p>Founded by the late Jaafar A. Shawal and his wife Zaharah Hashim, long before Malaysian cuisine became widely recognised in the UK. Their vision was simple: to create a place where people could gather, dine, and experience the warmth and diversity of Malaysian culture through food.</p>
+  <p>For over five decades, Satay House has remained a cherished institution for Malaysians living abroad, London locals, and visitors from around the world. Today, the legacy continues through their daughter, Fatizah Shawal, who together with the family remains dedicated to preserving the traditions and spirit of Satay House.</p>
+</div></section>
+
+<section id="find" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">How to find us</p>
+  <h2>Sale Place, just off Praed Street.</h2>
+  <div class="find">
+    <div><b>13 Sale Place, Paddington, London W2 1PX</b>Nearby the Hilton Metropole. The closest station is Edgware Road or Paddington station.</div>
+    <div><b>Opening hours</b>Open 7 days a week. 12:00 to 22:00 Sunday to Thursday, and 12:00 to 22:30 on Friday and Saturday.</div>
+    <div><b>Paying</b>Cash, Apple Pay, Google Pay and all major debit and credit cards accepted.</div>
+  </div>
+  <div class="cta"><a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Satay+House+Malaysian+Restaurant+13+Sale+Place+London+W2+1PX" rel="nofollow noopener">Find us on Google Maps</a></div>
+</div></section>
+
+<section class="last" id="contact"><div class="wrap">
+  <h2>Reserve your table.</h2>
+  <p>Use our quick and convenient online booking system, or call us on +44 20 7723 6763.</p>
+  <div class="cta">
+    <a class="btn cream stack" href="http://www.opentable.com/single.aspx?rid=7260&restref=7260&ref=10792" rel="nofollow noopener">Reserve your table<small>Online booking for parties of up to six</small></a>
+    <a class="btn ghost" href="tel:+442077236763">Call +44 20 7723 6763</a>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Satay House website could look and work on a phone. The wording, prices, logo and pictures come from satayhouse.com and its menu.</p>
+  <p>It is not the official Satay House website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="tel:+442077236763">Call</a>
+  <a class="btn red" href="http://www.opentable.com/single.aspx?rid=7260&restref=7260&ref=10792" rel="nofollow noopener">Reserve your table</a>
+</div>
+
+</body>
+</html>
