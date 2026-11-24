@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<title>Kent &amp; Sons · butchers of St John's Wood · design concept</title>
+<meta name="description" content="A design concept by K Studio for Kent &amp; Sons, St John's Wood. Not the official website.">
+<style>
+  :root { --red: #b3202b; --red-2: #8e1720; --green: #1d5a35; --green-2: #143f25; --gold: #e2c25a; --ink: #1d1d1b; --mute: #5f5d58; --paper: #faf8f3; --line: #e3ded2; --r: 8px; --shadow: 0 10px 26px rgba(40, 20, 10, .10); --serif: Georgia, "Times New Roman", Times, serif; --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 var(--sans); color: var(--ink); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol { margin: 0; } h1, h2 { text-wrap: balance; } img, svg { display: block; max-width: 100%; }
+  .wrap { width: min(100% - 40px, 1040px); margin-inline: auto; }
+  .concept { background: #1d1d1b; color: #dedad2; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: var(--gold); white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 3px solid var(--red); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .brand { display: block; padding: 5px 0; } .brand img { height: 56px; width: auto; }
+  nav.links { display: none; gap: 26px; font-family: var(--serif); font-size: 17px; color: var(--ink); } nav.links a { text-decoration: none; padding: 10px 0; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border-radius: var(--r); font-weight: 800; font-size: 17px; text-decoration: none; text-align: center; }
+  .btn.red { background: var(--red); color: #fff; } .btn.green { background: var(--green); color: #fff; } .btn.gold { background: var(--gold); color: #2a2208; } .btn.line { background: #fff; color: var(--red-2); border: 1.5px solid var(--red); } .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .6); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; }
+  .btn.stack { flex-direction: column; gap: 2px; line-height: 1.2; padding: 9px 22px; min-height: 60px; } .btn.stack small { font-weight: 600; font-size: 14px; opacity: .92; }
+  .hero { background: var(--green); color: #fff; }
+  .hero .shot { width: 100%; height: 176px; object-fit: cover; object-position: 50% 30%; }
+  .hero .wrap { padding: 18px 0 30px; }
+  .kicker { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+  .hero h1 { font-family: var(--serif); font-size: clamp(34px, 9.2vw, 64px); line-height: 1.06; font-weight: 700; margin: 8px 0 12px; }
+  .hero h1 span { color: var(--gold); }
+  .hero p.lead { font-size: 17px; line-height: 1.5; color: #e6efe8; max-width: 40ch; }
+  .cta { display: grid; gap: 10px; margin-top: 20px; }
+  .proof { background: var(--red); color: #fff; }
+  .proof .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .proof .wrap > div { padding: 16px 12px 16px 0; } .proof .wrap > div:nth-child(even) { padding-left: 16px; border-left: 1px solid rgba(255, 255, 255, .28); } .proof .wrap > div:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, .28); }
+  .proof b { display: block; font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.1; } .proof span { display: block; font-size: 14px; line-height: 1.35; color: #ffe1e3; margin-top: 5px; }
+  section { padding: 50px 0; }
+  .eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+  h2 { font-family: var(--serif); font-size: clamp(30px, 8vw, 48px); line-height: 1.08; font-weight: 700; color: var(--ink); margin: 8px 0 12px; }
+  .sub { color: var(--mute); max-width: 54ch; }
+  .festive { background: #fff; border: 2px solid var(--green); border-radius: 16px; padding: 22px 18px; box-shadow: var(--shadow); }
+  .festive h2 { font-size: clamp(27px, 7.2vw, 40px); }
+  .rows { margin-top: 12px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 13px 0; border-top: 1px solid var(--line); font-size: 17px; line-height: 1.3; } .rows .row:first-child { border-top: 0; }
+  .row b { font-weight: 700; } .row i { font-style: normal; font-weight: 800; color: var(--red-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .festive .btn { width: 100%; margin-top: 14px; }
+  .cuts { display: grid; gap: 14px; margin-top: 22px; }
+  .cut { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--red); border-radius: 14px; padding: 18px 18px 8px; box-shadow: var(--shadow); }
+  .cut h3 { font-family: var(--serif); font-size: 22px; line-height: 1.2; } .cut h3 small { display: block; font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--mute); margin-top: 2px; }
+  .cut .rows { margin-top: 8px; } .cut .row { font-size: 16px; padding: 11px 0; }
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 22px; }
+  .photos img { width: 100%; height: 150px; object-fit: cover; border-radius: 10px; } .photos img:first-child { grid-column: 1 / -1; height: 220px; }
+  .deliver { background: var(--green); color: #fff; }
+  .deliver h2 { color: #fff; } .deliver .eyebrow { color: var(--gold); } .deliver .sub { color: #e6efe8; } .deliver .cta .btn { width: 100%; }
+  .find { display: grid; gap: 0; margin-top: 18px; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 4px 18px; }
+  .find div { padding: 14px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.5; color: var(--mute); } .find div:first-child { border-top: 0; } .find b { display: block; color: var(--ink); font-size: 17px; }
+  .last { background: var(--red); color: #fff; }
+  .last h2 { color: #fff; } .last p { color: #ffe1e3; max-width: 46ch; } .last .cta .btn { width: 100%; }
+  footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); border-top: 1px solid var(--line); } footer p + p { margin-top: 8px; } footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.9fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; } header.top .wrap { height: 84px; } .brand img { height: 70px; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; } .hero .shot { height: 100%; min-height: 520px; order: 2; } .hero .wrap { width: auto; padding: 70px 50px 80px max(20px, calc((100vw - 1040px) / 2)); align-self: center; }
+    .hero p.lead { font-size: 21px; } .cta { grid-auto-flow: column; justify-content: start; }
+    .proof .wrap { grid-template-columns: repeat(4, 1fr); } .proof .wrap > div { border-top: 0 !important; border-left: 0 !important; padding: 24px 20px 24px 0 !important; }
+    section { padding: 84px 0; } .festive { padding: 40px; max-width: 760px; } .festive .btn { width: auto; } .cuts { grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+    .photos { grid-template-columns: 2fr 1fr 1fr; } .photos img, .photos img:first-child { grid-column: auto; height: 320px; }
+    .deliver .cta .btn, .last .cta .btn { width: auto; } .find { max-width: 760px; padding: 6px 26px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Kent &amp; Sons. This is not the official website.</span>
+  <a href="https://www.kents-butchers.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Kent &amp; Sons, finest quality butchers"><img src="img/logo.png" alt="Kent &amp; Sons, finest quality butchers" width="453" height="193"></a>
+  <nav class="links" aria-label="Sections"><a href="#festive">Turkeys</a><a href="#shop">Shop</a><a href="#delivery">Deliveries</a><a href="#contact">Contact</a></nav>
+  <a class="btn red small" href="tel:+442077222258">Call us</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero">
+  <img class="shot" src="img/front.jpg" alt="The Kent &amp; Sons shop on St John's Wood High Street" width="900" height="537">
+  <div class="wrap">
+    <p class="kicker">Finest quality butchers · St John's Wood</p>
+    <h1>Serving the best to London's finest <span>since 1919.</span></h1>
+    <p class="lead">Grass fed aged Scotch beef, English and Welsh matured lamb, Dutch veal, milk fed pork, and English and Continental poultry.</p>
+    <div class="cta">
+      <a class="btn gold stack" href="tel:+442077222258">Call 020 7722 2258<small>Before 10.00am for same day delivery</small></a>
+      <a class="btn ghost" href="https://www.kents-butchers.com/shop" rel="nofollow">Order from the shop</a>
+    </div>
+  </div>
+</div>
+
+<div class="proof"><div class="wrap">
+  <div><b>Since 1919</b><span>Kent &amp; Sons of St John's Wood</span></div>
+  <div><b>Same day delivery</b><span>Monday to Friday: call before 10.00am</span></div>
+  <div><b>Made here</b><span>Sausage, burgers and kitchen ready meals are prepared on the premises</span></div>
+  <div><b>8am to 5pm</b><span>Monday to Saturday</span></div>
+</div></div>
+
+<section id="festive"><div class="wrap">
+  <div class="festive">
+    <p class="eyebrow">Order now</p>
+    <h2>Thanksgiving and Christmas turkeys.</h2>
+    <div class="rows">
+      <div class="row"><b>Free Range Turkey</b><i>£110.00</i></div>
+      <div class="row"><b>Free Range Goose</b><i>£168.00</i></div>
+    </div>
+    <a class="btn green" href="https://www.kents-butchers.com/shop" rel="nofollow">Order your turkey</a>
+  </div>
+</div></section>
+
+<section id="shop" style="padding-top:0"><div class="wrap">
+  <p class="eyebrow">Shop</p>
+  <h2>From the counter.</h2>
+  <div class="photos">
+    <img src="img/counter.jpg" alt="The counter at Kent &amp; Sons" width="900" height="675">
+    <img src="img/aged-beef.jpg" alt="Aged beef at Kent &amp; Sons" width="700" height="580">
+    <img src="img/t-bone.jpg" alt="Steaks with rosemary" width="700" height="560">
+  </div>
+  <div class="cuts">
+    <div class="cut">
+      <h3>Beef<small>Grass fed aged Scotch beef</small></h3>
+      <div class="rows">
+        <div class="row"><b>Rib of Beef (Cote de Boeuf)</b><i>£58.50</i></div>
+        <div class="row"><b>Sirloin Roast</b><i>£89.71</i></div>
+        <div class="row"><b>Sirloin Steak</b><i>£8.99</i></div>
+        <div class="row"><b>Rib Eye Steak</b><i>£12.03</i></div>
+        <div class="row"><b>T - Bone Steak</b><i>£12.95</i></div>
+        <div class="row"><b>Fillet of Beef</b><i>£96.00</i></div>
+        <div class="row"><b>Wagyu Sirloin A5 from SAKURA</b><i>£66.25</i></div>
+      </div>
+    </div>
+    <div class="cut">
+      <h3>Lamb<small>English and Welsh matured lamb</small></h3>
+      <div class="rows">
+        <div class="row"><b>Rack of Lamb</b><i>£28.00</i></div>
+        <div class="row"><b>Lamb Leg</b><i>£32.13</i></div>
+        <div class="row"><b>Lamb Shoulder</b><i>£22.88</i></div>
+        <div class="row"><b>Lamb Cutlets pack of 3</b><i>£13.00</i></div>
+      </div>
+    </div>
+    <div class="cut">
+      <h3>Veal and poultry<small>Dutch veal, English and Continental poultry</small></h3>
+      <div class="rows">
+        <div class="row"><b>Veal Loin Chop/Cutlet</b><i>£12.94</i></div>
+        <div class="row"><b>Veal Osso Buco</b><i>£35.00</i></div>
+        <div class="row"><b>Chicken Breast Fillet</b><i>£5.87</i></div>
+        <div class="row"><b>Poussin</b><i>£5.95</i></div>
+      </div>
+    </div>
+    <div class="cut">
+      <h3>Prepared on the premises<small>Sausage, burgers and kitchen ready meals</small></h3>
+      <div class="rows">
+        <div class="row"><b>Fred Kent's Sausages</b><i>£8.50</i></div>
+        <div class="row"><b>Fred Kent's Burgers (pack of 2)</b><i>£6.20</i></div>
+        <div class="row"><b>Chicken Kiev</b><i>£8.95</i></div>
+        <div class="row"><b>Harry's Salt Beef</b><i>£19.20</i></div>
+      </div>
+    </div>
+  </div>
+  <div class="cta"><a class="btn line" href="https://www.kents-butchers.com/shop" rel="nofollow">See everything in the shop</a></div>
+</div></section>
+
+<section class="deliver" id="delivery"><div class="wrap">
+  <p class="eyebrow">Deliveries</p>
+  <h2>Call before 10.00am for same day delivery.</h2>
+  <p class="sub">Deliveries Monday to Friday.</p>
+  <div class="cta">
+    <a class="btn gold stack" href="tel:+442077222258">Call 020 7722 2258<small>Monday to Saturday, 8am to 5pm</small></a>
+    <a class="btn ghost" href="mailto:shop@kents-butchers.co.uk?subject=Order">shop@kents-butchers.co.uk</a>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <p class="eyebrow">Contact</p>
+  <h2>Kent &amp; Sons of St John's Wood.</h2>
+  <div class="find">
+    <div><b>59 St. John's Wood High Street, NW8 7NL</b>Finest quality butchers.</div>
+    <div><b>Opening times</b>Monday to Saturday, 8am to 5pm.</div>
+    <div><b>020 7722 2258</b>shop@kents-butchers.co.uk</div>
+  </div>
+  <div class="cta"><a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Kent+%26+Sons+Butchers+59+St+John%27s+Wood+High+Street+London+NW8+7NL" rel="nofollow noopener">Get directions</a></div>
+</div></section>
+
+<section class="last"><div class="wrap">
+  <h2>Serving the best since 1919.</h2>
+  <p>Call before 10.00am for same day delivery, Monday to Friday, or order from the shop.</p>
+  <div class="cta">
+    <a class="btn gold" href="tel:+442077222258">Call 020 7722 2258</a>
+    <a class="btn ghost" href="https://www.kents-butchers.com/shop" rel="nofollow">Order from the shop</a>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Kent &amp; Sons website could look and work on a phone. The wording, prices, logo and pictures come from kents-butchers.com.</p>
+  <p>It is not the official Kent &amp; Sons website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="https://www.kents-butchers.com/shop" rel="nofollow">Shop</a>
+  <a class="btn red" href="tel:+442077222258">Call 020 7722 2258</a>
+</div>
+
+</body>
+</html>
