@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#990000">
+<title>Books for Cooks · the cookbook shop, Notting Hill · design concept</title>
+<meta name="description" content="A design concept by K Studio for Books for Cooks, Notting Hill. Not the official website.">
+<style>
+  :root { --red: #990000; --red-2: #6d0000; --cream: #ffffcb; --paper: #fffdf1; --ink: #1c1410; --text: #40372f; --mute: #6c6257; --line: #eadfc4; --r: 8px; --shadow: 0 8px 22px rgba(80, 20, 0, .10); --serif: Georgia, "Times New Roman", Times, serif; --sans: Arial, Helvetica, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font: 17px/1.6 var(--sans); color: var(--text); background: var(--paper); padding-bottom: 78px; }
+  a { color: inherit; } h1, h2, h3, p, ul, ol, blockquote, figure { margin: 0; } h1, h2 { text-wrap: balance; } img, svg { display: block; max-width: 100%; height: auto; }
+  .wrap { width: min(100% - 40px, 1040px); margin-inline: auto; }
+  .concept { background: #17120f; color: #ddd6cc; font-size: 13px; line-height: 1.45; padding: 2px 0; }
+  .concept .wrap { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+  .concept a { color: #ffd9a8; white-space: nowrap; display: inline-block; padding: 10px 0; }
+  header.top { position: sticky; top: 0; z-index: 20; background: var(--red); box-shadow: 0 2px 10px rgba(0, 0, 0, .2); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 12px; }
+  .brand { text-decoration: none; color: #fff; line-height: 1.1; } .brand b { display: block; font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: .02em; } .brand b i { font-size: 20px; } .brand small { display: block; font-size: 12.5px; font-weight: 700; opacity: .92; margin-top: 2px; }
+  nav.links { display: none; gap: 24px; font-size: 16px; font-weight: 700; color: #fff; } nav.links a { text-decoration: none; padding: 10px 0; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 22px; border-radius: var(--r); font-weight: 700; font-size: 17px; text-decoration: none; text-align: center; }
+  .btn.red { background: var(--red); color: #fff; } .btn.white { background: #fff; color: var(--red); } .btn.line { background: #fff; color: var(--red); border: 1.5px solid var(--red); } .btn.ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .65); }
+  .btn.small { min-height: 44px; padding: 0 16px; font-size: 15px; white-space: nowrap; }
+  .btn.stack { flex-direction: column; gap: 2px; line-height: 1.2; padding: 9px 22px; min-height: 62px; } .btn.stack small { font-weight: 500; font-size: 14px; opacity: .92; }
+  .hero { background: #fff; border-bottom: 1px solid var(--line); }
+  .hero .wrap { padding: 20px 0 28px; }
+  .marks { display: flex; align-items: flex-end; gap: 4px; } .marks .logo { width: 200px; } .marks .chef { width: 87px; }
+  .kicker { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-top: 14px; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(33px, 9.2vw, 60px); line-height: 1.07; font-weight: 400; color: var(--ink); margin: 6px 0 10px; }
+  .hero p.lead { font-size: 17.5px; line-height: 1.5; max-width: 44ch; }
+  .cta { display: grid; gap: 10px; margin-top: 18px; }
+  .proof { background: var(--cream); border-bottom: 1px solid var(--line); }
+  .proof .wrap { display: grid; grid-template-columns: 1fr 1fr; }
+  .proof .wrap > div { padding: 16px 12px 16px 0; } .proof .wrap > div:nth-child(even) { padding-left: 16px; border-left: 1px solid #e3d8a4; } .proof .wrap > div:nth-child(n+3) { border-top: 1px solid #e3d8a4; }
+  .proof b { display: block; font-family: var(--serif); font-size: 21px; font-weight: 400; line-height: 1.15; color: var(--red); } .proof span { display: block; font-size: 14px; line-height: 1.4; color: #5a5040; margin-top: 5px; }
+  section { padding: 46px 0; }
+  .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+  h2 { font-family: var(--serif); font-size: clamp(28px, 7.6vw, 44px); line-height: 1.12; font-weight: 400; color: var(--ink); margin: 8px 0 12px; }
+  .sub { max-width: 60ch; } .sub + .sub { margin-top: 10px; }
+  .pic { display: grid; grid-template-columns: 150px 1fr; gap: 16px; align-items: center; margin-top: 22px; }
+  .pic img { width: 150px; border-radius: 10px; box-shadow: var(--shadow); } .pic p { font-family: var(--serif); font-size: 19px; line-height: 1.32; color: var(--ink); }
+  .box { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--red); border-radius: 12px; padding: 16px 16px 18px; margin-top: 22px; box-shadow: var(--shadow); }
+  .box h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--ink); } .box p { font-size: 16px; line-height: 1.5; margin-top: 6px; } .box .btn { width: 100%; margin-top: 14px; }
+  .chips { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; } .chips li { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px; font-size: 15px; line-height: 1.3; color: var(--ink); }
+  .fine { font-size: 14.5px; color: var(--mute); margin-top: 12px; }
+  .kitchen { background: var(--red); color: #fff; }
+  .kitchen h2 { color: #fff; } .kitchen .eyebrow { color: #ffd9a8; } .kitchen .sub { color: #fbeee2; }
+  .kitchen .pic p { color: #fff; } .kitchen .pic img { box-shadow: 0 8px 22px rgba(0, 0, 0, .3); }
+  .serve { list-style: none; padding: 0; display: grid; gap: 10px; margin-top: 20px; } .serve li { background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .24); border-radius: 12px; padding: 13px 16px; font-family: var(--serif); font-size: 19px; line-height: 1.3; }
+  .ours { background: #fff; border-bottom: 1px solid var(--line); }
+  .price { display: flex; align-items: baseline; gap: 12px; margin-top: 18px; background: var(--cream); border-radius: 12px; padding: 14px 16px; } .price b { font-family: var(--serif); font-size: 34px; font-weight: 400; line-height: 1; color: var(--red); font-variant-numeric: tabular-nums; } .price span { font-size: 16px; color: var(--ink); }
+  .vols { display: grid; gap: 12px; margin-top: 16px; }
+  .vols article { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; } .vols h3 { font-family: var(--serif); font-size: 19.5px; font-weight: 400; line-height: 1.25; color: var(--red); } .vols p { font-size: 15.5px; line-height: 1.5; margin-top: 5px; }
+  .after { margin-top: 18px; display: grid; }
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+  .tiles div { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px; box-shadow: var(--shadow); } .tiles b { display: block; font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.15; color: var(--red); } .tiles span { display: block; font-size: 14.5px; line-height: 1.4; margin-top: 5px; }
+  .two-btn { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+  .story { background: var(--cream); }
+  blockquote { margin-top: 20px; background: #fff; border-radius: 12px; padding: 18px 18px 16px; border-left: 4px solid var(--red); box-shadow: var(--shadow); } blockquote p { font-family: var(--serif); font-size: 19px; line-height: 1.45; color: var(--ink); } blockquote footer { padding: 0; margin-top: 10px; font-size: 14.5px; color: var(--mute); }
+  .find { margin-top: 18px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px; }
+  .find > div { padding: 14px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.5; } .find > div:first-child { border-top: 0; } .find b { display: block; color: var(--ink); font-size: 17px; } .find a { display: inline-block; padding: 6px 0; }
+  .front { width: 200px; border-radius: 12px; box-shadow: var(--shadow); margin-top: 18px; }
+  .last { background: var(--red-2); color: #fff; }
+  .last h2 { color: #fff; } .last p { color: #fbeee2; max-width: 48ch; } .last .cta .btn { width: 100%; }
+  body > footer { padding: 30px 0 40px; font-size: 14px; color: var(--mute); } body > footer p + p { margin-top: 8px; } body > footer a { display: inline-block; padding: 6px 0; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 2.1fr; gap: 10px; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .97); backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+  .bar .btn { padding: 0 10px; }
+  @media (min-width: 760px) {
+    body { padding-bottom: 0; font-size: 18px; } .bar { display: none; } nav.links { display: flex; } header.top .wrap { height: 76px; } .brand b { font-size: 26px; }
+    .hero .wrap { padding: 56px 0 64px; display: grid; grid-template-columns: 1.25fr 1fr; gap: 40px; align-items: center; } .hero .marks { order: 2; justify-content: center; } .marks .logo { width: 300px; } .marks .chef { width: 130px; }
+    .hero p.lead { font-size: 21px; } .cta { grid-auto-flow: column; justify-content: start; } .cta .btn { white-space: nowrap; }
+    .proof .wrap { grid-template-columns: repeat(4, 1fr); } .proof .wrap > div { border-top: 0 !important; border-left: 0 !important; padding: 24px 20px 24px 0 !important; }
+    section { padding: 80px 0; } .two { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .pic { grid-template-columns: 200px 1fr; max-width: 560px; } .pic img { width: 200px; } .box { margin-top: 0; } .box .btn, .last .cta .btn { width: auto; }
+    .serve { grid-template-columns: repeat(3, 1fr); } .vols { grid-template-columns: 1fr 1fr; } .price { max-width: 420px; } .after .btn { justify-self: start; }
+    .tiles { max-width: 560px; } .two-btn { max-width: 420px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="concept"><div class="wrap">
+  <span>Design concept by K Studio for Books for Cooks. This is not the official website.</span>
+  <a href="https://www.booksforcooks.com/" rel="nofollow">Current site</a>
+</div></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Books for Cooks: the cookbook shop"><b>Books <i>for</i> Cooks</b><small>the cookbook shop</small></a>
+  <nav class="links" aria-label="Sections"><a href="#bookshop">Bookshop</a><a href="#testkitchen">Test kitchen</a><a href="#workshops">Workshops</a><a href="#story">Our story</a><a href="#find">Find us</a></nav>
+  <a class="btn white small" href="tel:+442072211992">Call us</a>
+</div></header>
+
+<main id="top">
+
+<div class="hero"><div class="wrap">
+  <div class="marks">
+    <img class="logo" src="img/logo.png" alt="Books for Cooks" width="226" height="147">
+    <img class="chef" src="img/chef.png" alt="Drawing of a chef carrying a book and a tureen" width="98" height="147">
+  </div>
+  <div>
+    <p class="kicker">4 Blenheim Crescent · Notting Hill</p>
+    <h1>Notting Hill’s famous cookbook shop.</h1>
+    <p class="lead">Crammed with thousands of tasty titles and equipped with a squashy sofa for cookbook junkies in need of a long read.</p>
+    <div class="cta">
+      <a class="btn red stack" href="tel:+442072211992">Call 020 7221 1992<small>Open Tuesday to Saturday, 10.00am to 6.00pm</small></a>
+      <a class="btn line" href="#find">Opening times &amp; how to find us</a>
+    </div>
+  </div>
+</div></div>
+
+<div class="proof"><div class="wrap">
+  <div><b>Founded in 1983</b><span>by Heidi Lascelles</span></div>
+  <div><b>8,000 plus books</b><span>on the shelves</span></div>
+  <div><b>The test kitchen</b><span>cookbooks are put to the test in our café at the back of the shop</span></div>
+  <div><b>Workshops</b><span>cookery classes take place in the demonstration kitchen upstairs</span></div>
+</div></div>
+
+<section id="bookshop"><div class="wrap two">
+  <div>
+    <p class="eyebrow">The books</p>
+    <h2>In this shop we really do cook the books.</h2>
+    <p class="sub">We do not keep a catalogue: with 8,000 plus books on the shelves, new titles being published every week and current titles coming in and out of stock and availability every day, a comprehensive, up-to-date, listing is an impossibility.</p>
+    <div class="pic">
+      <img src="img/shop-inside.jpg" alt="Inside Books for Cooks, with shelves of cookbooks from floor to ceiling" width="200" height="150">
+      <p>Shelves crammed with books reaching from floor to ceiling.</p>
+    </div>
+    <p class="sub" style="margin-top: 22px">And do remember that our stock far exceeds the realm of simple recipe books to include:</p>
+    <ul class="chips">
+      <li>foodie fiction</li><li>history</li><li>biography</li><li>nutrition</li><li>art</li><li>sociology</li><li>chemistry</li><li>gourmet cards and posters</li>
+    </ul>
+  </div>
+  <div>
+    <div class="box">
+      <h3>A book list for your interest</h3>
+      <p>If you have a particular area of interest (e.g. bread, Thai, chefs etc.), we are delighted to provide a current book list with our own Books for Cooks recommendations too.</p>
+      <a class="btn red" href="mailto:info@booksforcooks.com">Email info@booksforcooks.com</a>
+    </div>
+    <div class="box" style="margin-top: 14px">
+      <h3>Cook books by post</h3>
+      <p>We can send books anywhere in the world; postal charges vary according to destination. We accept most credit and debit cards as well as sterling cheques. Please phone, fax, e-mail or write to us with all your details.</p>
+      <p class="fine">Remember that any books returned to us by post are at your expense and cannot be credited if damaged. We prefer to offer exchanges or credit notes against returned books.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="kitchen" id="testkitchen"><div class="wrap">
+  <p class="eyebrow">The test kitchen</p>
+  <h2>“The best smelling shop in the world”</h2>
+  <p class="sub">A special reputation that it owes entirely to the tiny test kitchen sandwiched between the bookshelves at the back of the store. Everyday recipes are tested from the cookbooks on the shelves by one of Books for Cooks' resident chefs.</p>
+  <div class="pic">
+    <img src="img/test-kitchen.jpg" alt="Home-baked cakes on the counter of the Books for Cooks test kitchen" width="200" height="204">
+    <p>Everyday, at the handful of tables squeezed into an alcove between the bookshelves and the kitchen, customers can sample:</p>
+  </div>
+  <ul class="serve">
+    <li>splendid lunches</li>
+    <li>fantastic home-baked cakes</li>
+    <li>the best cup of coffee in Notting Hill, until everything runs out</li>
+  </ul>
+  <p class="sub" style="margin-top: 20px">The menu changes daily as what's on the seasonally changing stalls of Portobello market and which of the thousands of cookbooks on our shelves is being put to the test determine the dish of the day.</p>
+</div></section>
+
+<section class="ours" id="cookbooks"><div class="wrap">
+  <p class="eyebrow">Our very own cookbooks</p>
+  <h2>Our most popular recipes from the test kitchen.</h2>
+  <p class="sub">The books take the form of a recipe sampler featuring the best-tasting dishes from the books tested throughout the year. They consist of about seventy-five eclectic and imaginative recipes that truly capture the flavour of the test kitchen, plus plenty of tips, chat and stories all in the spirit of the store.</p>
+  <div class="price"><b>£5.99</b><span>Each book costs £5.99.</span></div>
+  <div class="vols">
+    <article><h3>Favourite Recipes from Books for Cooks 1, 2 &amp; 3</h3><p>Our favourites recipes (including Corn Soup with Red Pepper Purée, Honey &amp; Chilli Chicken Salad, and Upside Down Pear &amp; Ginger Pudding) from our first three cookbooks in a splendid one-volume compilation.</p></article>
+    <article><h3>Favourite Recipes from Books 4, 5 &amp; 6</h3><p>Test kitchen favourites such as Tomato, Lentil &amp; Orange Soup, Grilled Chicken Salad with Roast Garlic &amp; Basil Dressing, and Orange Meringue Cake.</p></article>
+    <article><h3>Books for Cooks 7</h3><p>Goodies include Tomato &amp; Tamarind Soup with Toasted Spices, Aromatic Pork Belly Hotpot, and Cinnamon Swirl Sour Cream Cake.</p></article>
+    <article><h3>Books for Cooks 8</h3><p>New favourites include Beetroot &amp; Date Dip, Parsnip &amp; Smoked Fish Cakes with Tomato &amp; Horseradish, Sweetcorn Fritters, plus a bumper collection of sweet treats including Strawberry Meringue Cake and Double Ginger Cake.</p></article>
+    <article><h3>Books for Cooks 9</h3><p>A feast of new favourites gathered from the best recipes tested in the Books for Cooks test kitchen.</p></article>
+  </div>
+  <div class="after"><a class="btn red stack" href="tel:+442072211992">Call 020 7221 1992<small>For any further questions, please call us</small></a></div>
+</div></section>
+
+<section id="workshops"><div class="wrap two">
+  <div>
+    <p class="eyebrow">Workshops at Books for Cooks</p>
+    <h2>Books for Cooks workshops are available.</h2>
+    <p class="sub">The demonstrations will be based on specific cookbook titles and will be taking place in the afternoon from 3pm to 5pm.</p>
+    <div class="tiles">
+      <div><b>3pm to 5pm</b><span>taking place in the afternoon</span></div>
+      <div><b>Sample recipes</b><span>participants will be given sample recipes demonstrated</span></div>
+      <div><b>A feast</b><span>and will feast on all the food prepared</span></div>
+      <div><b>Updated monthly</b><span>subject matter and chosen recipes, to coincide with new releases</span></div>
+    </div>
+  </div>
+  <div>
+    <div class="pic">
+      <img src="img/workshop.jpg" alt="A cook demonstrating at a Books for Cooks workshop" width="200" height="138">
+      <p>The workshops have moved upstairs into a custom-built demonstration kitchen of their own.</p>
+    </div>
+    <p class="sub" style="margin-top: 20px">Our cookery workshops began in 1995 when, in response to the ever-increasing enquiries about cookery demonstrations, Eric with Ursula Ferrigno (our resident Italian cook) pinned up a notice in the shop advertising a mere handful of classes. We were overwhelmed by the enthusiastic response of our customers.</p>
+    <p class="sub"><b>For timetables and availability, please email or call the shop.</b> Space is limited so pre-booking is required.</p>
+    <div class="two-btn">
+      <a class="btn red" href="tel:+442072211992">Call the shop</a>
+      <a class="btn line" href="mailto:info@booksforcooks.com">Email</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="story" id="story"><div class="wrap">
+  <p class="eyebrow">The Books for Cooks story</p>
+  <h2>More than a cook book shop: a shop for all cooks!</h2>
+  <p class="sub">Books for Cooks was founded in 1983 by Heidi Lascelles. Heidi's aim to stock as many different cookbooks as she could find, and her readiness to track down a wanted book from whatever corner of the globe it came and then to despatch the book to whatever corner of the globe from which it was requested, soon earned the store a large international clientele.</p>
+  <p class="sub">In the new larger shop across the road, Heidi installed a kitchen where she hoped recipes might be tested and the cookbooks on the shelves brought to life.</p>
+  <blockquote>
+    <p>“We are able to put theory into practice. Food here is not just something to be perused in books, it is something to be cooked, eaten and enjoyed. We can then really champion the books in which we know the recipes really work.”</p>
+    <footer>Rosie Kindersley and Eric Treuille, Books for Cooks' proprietors</footer>
+  </blockquote>
+</div></section>
+
+<section id="find"><div class="wrap two">
+  <div>
+    <p class="eyebrow">Opening times &amp; how to find us</p>
+    <h2>4 Blenheim Crescent, Notting Hill.</h2>
+    <p class="sub">Our part of Blenheim Crescent runs between the Portobello Road and Kensington Park Road in the Notting Hill area of London.</p>
+    <img class="front" src="img/shop-front.jpg" alt="The Books for Cooks shop front on Blenheim Crescent" width="200" height="281">
+  </div>
+  <div class="find">
+    <div><b>Books for Cooks</b>4 Blenheim Crescent, Notting Hill, London W11 1NN</div>
+    <div><b>Open</b>Tuesday to Saturday, 10.00am to 6.00pm</div>
+    <div><b>Closed</b>We are closed on Sundays, Mondays, Bank Holidays, the last three weeks of August, and ten days over Christmas and New Year, including Christmas Eve.</div>
+    <div><b>The nearest tube station</b>is five minutes away at Ladbroke Grove (Hammersmith and City Line), while Notting Hill Gate (District, Circle and Central Lines) is a 10 minute walk up the Portobello Road.</div>
+    <div><b>By car</b>During the week, aim for the four-hour parking meters on Westbourne Grove.</div>
+    <div><b>Phone</b><a href="tel:+442072211992">020 7221 1992</a></div>
+    <div><b>Email</b><a href="mailto:info@booksforcooks.com">info@booksforcooks.com</a></div>
+  </div>
+</div></section>
+
+<section class="last"><div class="wrap">
+  <h2>Welcome to Books for Cooks.</h2>
+  <p>Cookbooks are put to the test in our café at the back of the shop, while cookery classes take place in the demonstration kitchen upstairs.</p>
+  <div class="cta">
+    <a class="btn white" href="tel:+442072211992">Call 020 7221 1992</a>
+    <a class="btn ghost" href="mailto:info@booksforcooks.com">Email info@booksforcooks.com</a>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p>This page is a design concept prepared by <a href="https://kheirstudio.com">K Studio</a> to show how the Books for Cooks website could look and work on a phone. The wording, prices, logo and pictures come from booksforcooks.com.</p>
+  <p>It is not the official Books for Cooks website and will be removed on request.</p>
+</div></footer>
+
+<div class="bar">
+  <a class="btn line" href="mailto:info@booksforcooks.com">Email</a>
+  <a class="btn red" href="tel:+442072211992">Call 020 7221 1992</a>
+</div>
+
+</body>
+</html>
